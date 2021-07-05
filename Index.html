@@ -1,0 +1,2330 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/imagehover.min.css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/demo.css">
+
+    <link rel="stylesheet" href="css/hw.scss">
+    <link rel="stylesheet" href="css/hw.css">
+
+
+</head>
+<body>
+
+
+<!--    R E L' S     C O D I N G     S T A R T S     H E R E     -->
+
+
+<!--Header starts here-->
+
+<section id="header">
+    <div class="container">
+        <div class="row">
+
+            <ul class="information pull-left">
+                <li><a href="#"><i class="fa fa-user" aria-hidden="true">&nbsp;&nbsp;&nbsp;My Account</i></a></li>
+                <li><a href="#"><i class="fa fa-heart" aria-hidden="true">&nbsp;&nbsp;&nbsp;Wishlist</i></a></li>
+                <li><a href="#"><i class="fa fa-shopping-cart" aria-hidden="true">&nbsp;&nbsp;&nbsp;My Cart</i></a></li>
+                <li><a href="#"><i class="fa fa-key" aria-hidden="true">&nbsp;&nbsp;&nbsp;Checkout</i></a></li>
+                <li class="bothInfo"><a href="#"><i class="fa fa-image" aria-hidden="true">&nbsp;&nbsp;&nbsp;Login</i></a></li>
+            </ul>
+
+            <ul class="choosing pull-right">
+                <li>
+                    <div class="dropdown">
+                        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                            currency : <span class="black">USD</span>
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                            <li><a href="#">Euro</a></li>
+                            <li><a href="#">Rupees</a></li>
+                            <li><a href="#">Taka</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Other Currency</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="dropdown">
+                        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                            language : <span class="black">English</span>
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                            <li><a href="#">French</a></li>
+                            <li><a href="#">Italian</a></li>
+                            <li><a href="#">Spanish</a></li>
+                            <li><a href="#">Bangla</a></li>
+                            <li><a href="#">Hindi</a></li>
+                            <li><a href="#">Urdu</a></li>
+                            <li><a href="#">Arabic</a></li>
+                            <li><a href="#">Chinese</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <br><br>
+
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section id="middleHeader">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="setting">
+                <i class="fa fa-wrench"></i>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-offset-3 col-md-offset-3 col-sm-6 col-md-6">
+                <ul>
+                    <li class="infoForContact"><i class="fa fa-phone"></i>&nbsp;&nbsp;&nbsp;(400) 888 888 868</li>
+                    <li><i class="fa fa-envelope"></i>&nbsp;&nbsp;&nbsp;saler@RFL.com</li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                
+                <div class="col-sm-2 col-md-2">
+                    <img src="Pictures/logo.png" alt="">
+                </div>
+                <div class="col-sm-offset-1 col-md-offset-1 col-sm-6 col-md-6">
+
+                    <form class="form-inline">
+                        <div class="form-group">
+                            <label class="sr-only" for="exampleInputAmount">search</label>
+                            <div class="input-group">
+                                <div class="input-group-addon">
+                                    <div class="dropdown">
+                                        <div id="dLabel" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <a href="">Catagories</a>
+                                            <span class="caret"></span>
+                                        </div>
+                                        <ul class="dropdown-menu" aria-labelledby="dLabel">
+                                            <li><a href="#"><i class="fa fa-desktop">&nbsp;&nbsp;&nbsp;Computer</i></a></li>
+                                            <li><a href="#"><i class="fa fa-mobile">&nbsp;&nbsp;&nbsp;Smart Phone</i></a></li>
+                                            <li><a href="#"><i class="fa fa-camera">&nbsp;&nbsp;&nbsp;Camera</i></a></li>
+                                            <li><a href="#"><i class="fa fa-audio-description">&nbsp;&nbsp;&nbsp;TV & Audio</i></a></li>
+                                            <li><a href="#"><i class="fa fa-gamepad">&nbsp;&nbsp;&nbsp;Games</i></a></li>
+                                            <li><a href="#"><i class="fa fa-cab">&nbsp;&nbsp;&nbsp;Car Electronic</i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <input type="text" class="form-control" id="exampleInputAmount" placeholder="Seach here.....">
+                                <div class="input-group-addon"><i class="fa fa-search"></i></div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="col-sm-offset-1 col-md-offset-1 col-sm-2 col-md-2">
+                    <form class="form-inline">
+                        <div class="form-group">
+                            <div class="input-group">
+                                <input type="text" class="form-control" id="exampleInputAmount1">
+                                <div class="input-group-addon"><i class="fa fa-shopping-cart"></i></div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="lowerHeader">
+    <div class="container">
+        <div class="row">
+
+            <nav class="navbar">
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li><a href="Index.html" class="active">HOME</a></li>
+                        <li><a href="Desktop.html">DESKTOP</a></li>
+                        <li><a href="#">ELECTRONICS</a></li>
+                        <li><a href="#">TELEVISION</a></li>
+                        <li><a href="home.html">SMART PHONE</a></li>
+                        <li><a href="Contact.html">CONTACT</a></li>
+                        <li><a href="Pages.html">PAGES</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="ntags">NEW</div>
+            <div class="htags">HOT</div>
+
+        </div>
+    </div>
+</section>
+
+<!--Banner starts here-->
+
+<section id="banner">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-sm-3 col-md-3">
+                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingOne" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <h4 class="panel-title text-uppercase">
+                                <i class="fa fa-align-justify"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;catagories
+                            </h4>
+                        </div>
+                        <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                            <div class="panel-body text-uppercase">
+                                <ul>
+                                    <li><a href="#"><i class="fa fa-desktop"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; computer<i class="fa fa-arrow-circle-right pull-right"></i></a></li>
+                                    <li><a href="#">&nbsp;&nbsp;<i class="fa fa-mobile"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; smart phone<i class="fa fa-arrow-circle-right pull-right"></i></a></li>
+                                    <li><a href="#">&nbsp;<i class="fa fa-apple"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; apple store<i class="fa fa-arrow-circle-right pull-right"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-camera"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; camera<i class="fa fa-arrow-circle-right pull-right"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-headphones"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; tv & audio<i class="fa fa-arrow-circle-right pull-right"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-gamepad"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; game & video<i class="fa fa-arrow-circle-right pull-right"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-location-arrow"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;car electronic<i class="fa fa-arrow-circle-right pull-right"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-history"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; old products<i class="fa fa-arrow-circle-right pull-right"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-microphone"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; accessories<i class="fa fa-arrow-circle-right pull-right"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-9 col-md-9">
+                <div class="mainBanner">
+                    <div class="bannerText">
+                        <p>
+                            <span class="h2 text-uppercase">the new <span class="colorText">imac</span> for you</span><br><br>
+                            21.5-Inch Now Starting At $1099 <br><br>
+                            27-Inch Starting At $1799
+                        </p>
+                        <br>
+                        <button class="btn">SHOP NOW</button>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-sm-4 col-md-4">
+                        <a href="#"><div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner" role="listbox">
+                                <div class="item active">
+                                    <div class="text">
+                                        <p class="h3 text-uppercase grn"><i class="fa fa-usd"></i>money back</p>
+                                        <br>
+                                        <p class="bannerDummy">30 DAY MONEY BACK GUARANTEE.</p>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="text">
+                                        <p class="h3 text-uppercase ylw"><i class="fa fa-truck"></i>free shipping</p>
+                                        <br>
+                                        <p class="bannerDummy">FREE SHIP ON ORDER OVER $600.00</p>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="text">
+                                        <p class="h3 text-uppercase crms"><i class="fa fa-gift"></i>special sale</p>
+                                        <br>
+                                        <p class="bannerDummy">ALL ITEMS SELL UP TO 20% OFF.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Controls -->
+
+                        </div></a>
+                    </div>
+                    <div class="col-sm-4 col-md-4">
+                        <a href="#"><div id="carousel-example-generic1" class="carousel slide" data-ride="carousel">
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner" role="listbox">
+                                <div class="item">
+                                    <div class="text">
+                                        <p class="h3 text-uppercase grn"><i class="fa fa-usd"></i>money back</p>
+                                        <br>
+                                        <p class="bannerDummy">30 DAY MONEY BACK GUARANTEE.</p>
+                                    </div>
+                                </div>
+                                <div class="item active">
+                                    <div class="text">
+                                        <p class="h3 text-uppercase ylw"><i class="fa fa-truck"></i>free shipping</p>
+                                        <br>
+                                        <p class="bannerDummy">FREE SHIP ON ORDER OVER $600.00</p>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="text">
+                                        <p class="h3 text-uppercase crms"><i class="fa fa-gift"></i>special sale</p>
+                                        <br>
+                                        <p class="bannerDummy">ALL ITEMS SELL UP TO 20% OFF.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div></a>
+                    </div>
+                    <div class="col-sm-4 col-md-4">
+                        <a href="#"><div id="carousel-example-generic2" class="carousel slide" data-ride="carousel">
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner" role="listbox">
+                                <div class="item">
+                                    <div class="text">
+                                        <p class="h3 text-uppercase grn"><i class="fa fa-usd"></i>money back</p>
+                                        <br>
+                                        <p class="bannerDummy">30 DAY MONEY BACK GUARANTEE.</p>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="text">
+                                        <p class="h3 text-uppercase ylw"><i class="fa fa-truck"></i>free shipping</p>
+                                        <br>
+                                        <p class="bannerDummy">FREE SHIP ON ORDER OVER $600.00</p>
+                                    </div>
+                                </div>
+                                <div class="item active">
+                                    <div class="text">
+                                        <p class="h3 text-uppercase crms"><i class="fa fa-gift"></i>special sale</p>
+                                        <br>
+                                        <p class="bannerDummy">ALL ITEMS SELL UP TO 20% OFF.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div></a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+<!--Portfolio starts here-->
+
+<section id="products">
+    <div class="container">
+        <div class="row">
+
+            <div class="hidden-xs col-sm-3 col-md-3 col-lg-3">
+                <div class="row">
+                    <div class="col-sm-8 col-md-8">
+                        <h4>SPECIAL OFFER</h4>
+                    </div>
+                    <div class="col-sm-4 col-md-4">
+                        <!-- Controls -->
+                        <div class="controls pull-right hidden-xs">
+                            <a class="left fa fa-chevron-left btn btn-default" href="#carousel-example" data-slide="prev"></a>
+                            <a class="right fa fa-chevron-right btn btn-default" href="#carousel-example" data-slide="next"></a>
+                        </div>
+                    </div>
+                    <br><br>
+                    <hr>
+                </div>
+                <br>
+                <div id="carousel-example" class="carousel slide hidden-xs" data-ride="carousel">
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-2 col-md-12 col-lg-12">
+                                    <div class="col-item">
+                                        <div class="row">
+                                            <div class="col-xs-6 col-sm-5 col-md-5 col-lg-6">
+                                                <div class="photo">
+                                                    <img src="Pictures/products/1.jpg" class="img-responsive" alt="a" />
+                                                    <div class="h tag">HOT</div>
+                                                </div>
+                                            </div>
+                                            <div class="info">
+                                                <div class="price col-xs-6 col-sm-7 col-md-7 col-lg-6">
+                                                    <h4>Sample Product</h4>
+                                                    <div class="rating">
+                                                        <i class="stars fa fa-star"></i>
+                                                        <i class="stars fa fa-star"></i>
+                                                        <i class="stars fa fa-star"></i>
+                                                        <i class="stars fa fa-star"></i>
+                                                        <i class="stars fa fa-star"></i>
+                                                        <h5 class="price-text-color">$199.99</h5>
+                                                        <button class="btn3d btn btn-carousel text-capitalize">add to cart</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-2 col-md-12 col-lg-12">
+                                    <div class="col-item">
+                                        <div class="row">
+                                            <div class="col-xs-6 col-sm-5 col-md-5 col-lg-6">
+                                                <div class="photo">
+                                                    <img src="Pictures/products/2.jpg" class="img-responsive" alt="a" />
+                                                </div>
+                                            </div>
+                                            <div class="info">
+                                                <div class="price col-xs-6 col-sm-7 col-md-7 col-lg-6">
+                                                    <h4>Sample Product</h4>
+                                                    <div class="rating">
+                                                        <i class="stars fa fa-star"></i>
+                                                        <i class="stars fa fa-star"></i>
+                                                        <i class="stars fa fa-star"></i>
+                                                        <i class="stars fa fa-star"></i>
+                                                        <i class="stars fa fa-star"></i>
+                                                        <h5 class="price-text-color">$199.99</h5>
+                                                        <button class="btn3d btn btn-carousel text-capitalize">add to cart</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-2 col-md-12 col-lg-12">
+                                    <div class="col-item">
+                                        <div class="row">
+                                            <div class="col-xs-6 col-sm-5 col-md-5 col-lg-6">
+                                                <div class="photo">
+                                                    <img src="Pictures/products/3.jpg" class="img-responsive" alt="a" />
+                                                    <div class="n tag">NEW</div>
+                                                </div>
+                                            </div>
+                                            <div class="info">
+                                                <div class="price col-xs-6 col-sm-7 col-md-7 col-lg-6">
+                                                    <h4>Sample Product</h4>
+                                                    <div class="rating">
+                                                        <i class="stars fa fa-star"></i>
+                                                        <i class="stars fa fa-star"></i>
+                                                        <i class="stars fa fa-star"></i>
+                                                        <i class="stars fa fa-star"></i>
+                                                        <i class="stars fa fa-star"></i>
+                                                        <h5 class="price-text-color">$199.99</h5>
+                                                        <button class="btn3d btn btn-carousel text-capitalize">add to cart</button>                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-2 col-md-12 col-lg-12">
+                                    <div class="col-item">
+                                        <div class="row">
+                                            <div class="col-xs-6 col-sm-5 col-md-5 col-lg-6">
+                                                <div class="photo">
+                                                    <img src="Pictures/products/s1.jpg" class="img-responsive" alt="a" />
+                                                </div>
+                                            </div>
+                                            <div class="info">
+                                                <div class="price col-xs-6 col-sm-7 col-md-7 col-lg-6">
+                                                    <h4>Sample Product</h4>
+                                                    <div class="rating">
+                                                        <i class="stars fa fa-star"></i>
+                                                        <i class="stars fa fa-star"></i>
+                                                        <i class="stars fa fa-star"></i>
+                                                        <i class="stars fa fa-star"></i>
+                                                        <i class="stars fa fa-star"></i>
+                                                        <h5 class="price-text-color">$199.99</h5>
+                                                        <button class="btn3d btn btn-carousel text-capitalize">add to cart</button>                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-2 col-md-12 col-lg-12">
+                                    <div class="col-item">
+                                        <div class="row">
+                                            <div class="col-xs-6 col-sm-5 col-md-5 col-lg-6">
+                                                <div class="photo">
+                                                    <img src="Pictures/products/sm1.jpg" class="img-responsive" alt="a" />
+                                                    <div class="h tag">HOT</div>
+                                                    <div class="n tag">NEW</div>
+                                                </div>
+                                            </div>
+                                            <div class="info">
+                                                <div class="price col-xs-6 col-sm-7 col-md-7 col-lg-6">
+                                                    <h4>Sample Product</h4>
+                                                    <div class="rating">
+                                                        <i class="stars fa fa-star"></i>
+                                                        <i class="stars fa fa-star"></i>
+                                                        <i class="stars fa fa-star"></i>
+                                                        <i class="stars fa fa-star"></i>
+                                                        <i class="stars fa fa-star"></i>
+
+                                                        <h5 class="price-text-color">$199.99</h5>
+                                                        <button class="btn3d btn btn-carousel text-capitalize">add to cart</button>                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-2 col-md-12 col-lg-12">
+                                    <div class="col-item">
+                                        <div class="row">
+                                            <div class="col-xs-6 col-sm-5 col-md-5 col-lg-6">
+                                                <div class="photo">
+                                                    <img src="Pictures/products/sm5.jpg" class="img-responsive" alt="a" />
+                                                </div>
+                                            </div>
+                                            <div class="info">
+                                                <div class="price col-xs-6 col-sm-7 col-md-7 col-lg-6">
+                                                    <h4>Sample Product</h4>
+                                                    <div class="rating">
+                                                        <i class="stars fa fa-star"></i>
+                                                        <i class="stars fa fa-star"></i>
+                                                        <i class="stars fa fa-star"></i>
+                                                        <i class="stars fa fa-star"></i>
+                                                        <i class="stars fa fa-star"></i>
+                                                        <h5 class="price-text-color">$199.99</h5>
+                                                        <button class="btn3d btn btn-carousel text-capitalize">add to cart</button>                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br><br><br>
+                <div class="row">
+                        <div class="panel-group" id="accordion3" role="tablist" aria-multiselectable="true">
+                            <div class="panel">
+                                <div class="panel-heading" role="tab" id="headingOne3" data-toggle="collapse" data-parent="#accordion" href="#collapseOne3" aria-expanded="true" aria-controls="collapseOne">
+                                    <h4 class="panel-title">PRODUCT TAGS</h4>
+                                </div>
+                                <div id="collapseOne3" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                                    <div class="panel-body">
+                                        <a href="#"><div class="sectionTag">Phone</div></a>
+                                        <a href="#"><div class="sectionTag">Vest</div></a>
+                                        <a href="#"><div class="sectionTag">Smartphone</div></a>
+                                        <a href="#"><div class="sectionTag">Furniture</div></a>
+                                        <a href="#"><div class="sectionTag">T-Shirt</div></a>
+                                        <a href="#"><div class="sectionTag">Sweatpants</div></a>
+                                        <a href="#"><div class="sectionTag">Sneaker</div></a>
+                                        <a href="#"><div class="sectionTag">Toys</div></a>
+                                        <a href="#"><div class="sectionTag">Rose</div></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                </div>
+                <br><br><br>
+                <div class="row">
+                        <div class="row">
+                            <div class="col-sm-8 col-md-8">
+                                <h4>SPECIAL DEALS</h4>
+                            </div>
+                            <div class="col-sm-4 col-md-4">
+                                <!-- Controls -->
+                                <div class="controls pull-right hidden-xs">
+                                    <a class="left fa fa-chevron-left btn btn-default" href="#carousel-example1" data-slide="prev"></a>
+                                    <a class="right fa fa-chevron-right btn btn-default" href="#carousel-example1" data-slide="next"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <br>
+                        <div id="carousel-example1" class="carousel slide hidden-xs" data-ride="carousel">
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                    <div class="row">
+                                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                            <div class="col-item">
+                                                <div class="row">
+                                                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                                        <div class="photo">
+                                                            <img src="Pictures/products/1.jpg" class="img-responsive" alt="a" />
+                                                            <div class="h tag">HOT</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="info">
+                                                        <div class="price col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                                            <h4>Sample Product</h4>
+                                                            <div class="rating">
+                                                                <i class="stars fa fa-star"></i>
+                                                                <i class="stars fa fa-star"></i>
+                                                                <i class="stars fa fa-star"></i>
+                                                                <i class="stars fa fa-star"></i>
+                                                                <i class="stars fa fa-star"></i>
+                                                                <h5 class="price-text-color">$199.99</h5>
+                                                                <button class="btn3d btn btn-carousel text-capitalize">add to cart</button>                                                    </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div class="row">
+                                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                            <div class="col-item">
+                                                <div class="row">
+                                                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                                        <div class="photo">
+                                                            <img src="Pictures/products/2.jpg" class="img-responsive" alt="a" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="info">
+                                                        <div class="price col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                                            <h4>Sample Product</h4>
+                                                            <div class="rating">
+                                                                <i class="stars fa fa-star"></i>
+                                                                <i class="stars fa fa-star"></i>
+                                                                <i class="stars fa fa-star"></i>
+                                                                <i class="stars fa fa-star"></i>
+                                                                <i class="stars fa fa-star"></i>
+                                                                <h5 class="price-text-color">$199.99</h5>
+                                                                <button class="btn3d btn btn-carousel text-capitalize">add to cart</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div class="row">
+                                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                            <div class="col-item">
+                                                <div class="row">
+                                                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                                        <div class="photo">
+                                                            <img src="Pictures/products/3.jpg" class="img-responsive" alt="a" />
+                                                            <div class="n tag">NEW</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="info">
+                                                        <div class="price col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                                            <h4>Sample Product</h4>
+                                                            <div class="rating">
+                                                                <i class="stars fa fa-star"></i>
+                                                                <i class="stars fa fa-star"></i>
+                                                                <i class="stars fa fa-star"></i>
+                                                                <i class="stars fa fa-star"></i>
+                                                                <i class="stars fa fa-star"></i>
+                                                                <h5 class="price-text-color">$199.99</h5>
+                                                                <button class="btn3d btn btn-carousel text-capitalize">add to cart</button>                                                    </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="row">
+                                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                            <div class="col-item">
+                                                <div class="row">
+                                                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                                        <div class="photo">
+                                                            <img src="Pictures/products/s1.jpg" class="img-responsive" alt="a" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="info">
+                                                        <div class="price col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                                            <h4>Sample Product</h4>
+                                                            <div class="rating">
+                                                                <i class="stars fa fa-star"></i>
+                                                                <i class="stars fa fa-star"></i>
+                                                                <i class="stars fa fa-star"></i>
+                                                                <i class="stars fa fa-star"></i>
+                                                                <i class="stars fa fa-star"></i>
+                                                                <h5 class="price-text-color">$199.99</h5>
+                                                                <button class="btn3d btn btn-carousel text-capitalize">add to cart</button>                                                    </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div class="row">
+                                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                            <div class="col-item">
+                                                <div class="row">
+                                                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                                        <div class="photo">
+                                                            <img src="Pictures/products/sm1.jpg" class="img-responsive" alt="a" />
+                                                            <div class="h tag">HOT</div>
+                                                            <div class="n tag">NEW</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="info">
+                                                        <div class="price col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                                            <h4>Sample Product</h4>
+                                                            <div class="rating">
+                                                                <i class="stars fa fa-star"></i>
+                                                                <i class="stars fa fa-star"></i>
+                                                                <i class="stars fa fa-star"></i>
+                                                                <i class="stars fa fa-star"></i>
+                                                                <i class="stars fa fa-star"></i>
+
+                                                                <h5 class="price-text-color">$199.99</h5>
+                                                                <button class="btn3d btn btn-carousel text-capitalize">add to cart</button>                                                    </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div class="row">
+                                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                            <div class="col-item">
+                                                <div class="row">
+                                                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                                        <div class="photo">
+                                                            <img src="Pictures/products/sm5.jpg" class="img-responsive" alt="a" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="info">
+                                                        <div class="price col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                                            <h4>Sample Product</h4>
+                                                            <div class="rating">
+                                                                <i class="stars fa fa-star"></i>
+                                                                <i class="stars fa fa-star"></i>
+                                                                <i class="stars fa fa-star"></i>
+                                                                <i class="stars fa fa-star"></i>
+                                                                <i class="stars fa fa-star"></i>
+                                                                <h5 class="price-text-color">$199.99</h5>
+                                                                <button class="btn3d btn btn-carousel text-capitalize">add to cart</button>                                                    </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                <br><br><br>
+                <div class="row">
+                        <div class="panel-group" id="accordion4" role="tablist" aria-multiselectable="true">
+                            <div class="panel">
+                                <div class="panel-heading" role="tab" id="headingOne4" data-toggle="collapse" data-parent="#accordion" href="#collapseOne4" aria-expanded="true" aria-controls="collapseOne">
+                                    <h4 class="panel-title">NEWSLETTER</h4>
+                                </div>
+                                <div id="collapseOne4" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                                    <div class="panel-body">
+                                        <div class="form-group">
+                                            <label for="exampleInputEmail1" class="h5">Sign Up for Our Newsletter!</label>
+                                            <br><br>
+                                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Subscribe to our newsletter">
+                                            <br><br>
+                                            <a href="https://twitter.com/Dave_Conner" class="btn btn-1">
+                                                <svg>
+                                                    <rect x="0" y="0" fill="none" width="100%" height="100%"/>
+                                                </svg>
+                                                Subscribe
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                <br><br><br>
+                <div class="row">
+                        <div class="row">
+
+                            <div class="col-sm-8 col-md-8">
+                                <h4>HOT DEALS</h4>
+                            </div>
+                            <div class="col-sm-4 col-md-4">
+                                <!-- Controls -->
+                                <div class="controls pull-right hidden-xs">
+                                    <a class="left fa fa-chevron-left btn btn-default" href="#carousel-example2" data-slide="prev"></a>
+                                    <a class="right fa fa-chevron-right btn btn-default" href="#carousel-example2" data-slide="next"></a>
+                                </div>
+                            </div>
+                            <br><br>
+                            <hr>
+                            <div id="carousel-example2" class="carousel slide hidden-xs" data-ride="carousel">
+                                <!-- Wrapper for slides -->
+                                <div class="carousel-inner">
+                                    <div class="item active">
+                                        <div class="row">
+                                            <div class="col-sm-2 col-md-12 col-lg-12">
+                                                <div class="col-item">
+                                                    <div class="row">
+                                                        <div class="col-sm-12 col-md-12 col-lg-12">
+                                                            <div class="photo">
+                                                                <img src="Pictures/hot-deals/1.jpg" class="img-responsive" alt="a" />
+                                                                <div class="dTag text-center">35%<br>OFF</div>
+                                                                <div class="count">
+                                                                    <div class="timelapse text-center"><span class="time">120</span><br>Days</div>
+                                                                    <div class="timelapse text-center"><span class="time">20</span><br>HRS</div>
+                                                                    <div class="timelapse text-center"><span class="time">36</span><br>MINS</div>
+                                                                    <div class="timelapse text-center"><span class="time">60</span><br>SEC</div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="info">
+                                                                <h1>Apple Iphone 5s 32GB Gold</h1>
+                                                                <div class="rating">
+                                                                    <i class="stars fa fa-star"></i>
+                                                                    <i class="stars fa fa-star"></i>
+                                                                    <i class="stars fa fa-star"></i>
+                                                                    <i class="stars fa fa-star"></i>
+                                                                    <i class="stars fa fa-star"></i>
+                                                                    <h5 class="price-text-color">$600.00 &nbsp;&nbsp;<strike>$800.00</strike></h5>
+                                                                    <button class="btn3d btn btn-carousel text-capitalize">add to cart</button>                                                    </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="row">
+                                            <div class="col-sm-2 col-md-12 col-lg-12">
+                                                <div class="col-item">
+                                                    <div class="row">
+                                                        <div class="col-sm-12 col-md-12 col-lg-12">
+                                                            <div class="photo">
+                                                                <img src="Pictures/hot-deals/cute-girl-headphones-using-smartphone_23-2147781853.jpg" height="482" width="270" alt="a" />
+                                                                <div class="dTag text-center">35% <br>OFF</div>
+                                                                <div class="count">
+                                                                    <div class="timelapse text-center"><span class="time">120</span><br>Days</div>
+                                                                    <div class="timelapse text-center"><span class="time">20</span><br>HRS</div>
+                                                                    <div class="timelapse text-center"><span class="time">36</span><br>MINS</div>
+                                                                    <div class="timelapse text-center"><span class="time">60</span><br>SEC</div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="info">
+                                                                <h1>Apple Iphone 5s 32GB Gold</h1>
+                                                                <div class="rating">
+                                                                    <i class="stars fa fa-star"></i>
+                                                                    <i class="stars fa fa-star"></i>
+                                                                    <i class="stars fa fa-star"></i>
+                                                                    <i class="stars fa fa-star"></i>
+                                                                    <i class="stars fa fa-star"></i>
+                                                                    <h5 class="price-text-color">$600.00 &nbsp;&nbsp;<strike>$800.00</strike></h5>
+                                                                    <button class="btn3d btn btn-carousel text-capitalize">add to cart</button>                                                    </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                </div>
+                <br><br><br>
+                <div class="row saving">
+                        <div class="row">
+                            <div id="carousel-example-generic3" class="carousel slide" data-ride="carousel">
+                                <!-- Indicators -->
+                                <ol class="carousel-indicators">
+                                    <li data-target="#carousel-example-generic3" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carousel-example-generic3" data-slide-to="1"></li>
+                                    <li data-target="#carousel-example-generic3" data-slide-to="2"></li>
+                                </ol>
+
+                                <!-- Wrapper for slides -->
+                                <div class="carousel-inner" role="listbox">
+                                    <div class="item active">
+                                        <p class="head">SAVE</p>
+                                        <p class="body">50%</p><br><br>
+                                        <p class="foot">ON SELECTED ITEMS</p>
+                                    </div>
+                                    <div class="item">
+                                        <p class="head">SAVE</p>
+                                        <p class="body">50%</p><br><br>
+                                        <p class="foot">ON SELECTED ITEMS</p>
+                                    </div>
+                                    <div class="item">
+                                        <p class="head">SAVE</p>
+                                        <p class="body">50%</p><br><br>
+                                        <p class="foot">ON SELECTED ITEMS</p>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                </div>
+            </div>
+            </div>
+
+            <div class="col-xs-10 col-sm-9 col-md-9 col-lg-9">
+                <div class="row">
+                    <div class="col-sm-8 col-md-8">
+                        <h4>NEW PRODUCTS</h4>
+                    </div>
+                    <div class="col-sm-4 col-md-4">
+                        <!-- Controls -->
+                        <div class="controls pull-right hidden-xs">
+                            <a class="left fa fa-chevron-left btn btn-default" href="#carousel-example3" data-slide="prev"></a>
+                            <a class="right fa fa-chevron-right btn btn-default" href="#carousel-example3" data-slide="next"></a>
+                        </div>
+                    </div>
+                    <br><br>
+                    <hr>
+                </div>
+                <div class="row">
+                    <div id="carousel-example3" class="carousel phone slide hidden-xs" data-ride="carousel">
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                        <div class="wrapper">
+
+                                            <main>
+
+                                                    <div class="section">
+                                                        <div class="section__content clearfix">
+                                                            <div class="smartPhone col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                                                                <div class="card effect__hover">
+                                                                    <div class="card__front">
+                                                                        <div class="nTag">NEW</div>
+                                                                        <span class="card__text"><br><img src="Pictures/hot-deals/Untitled-3.png" height="200" width="100"></span>
+                                                                    </div>
+                                                                    <div class="card__back">
+                                                                        <div class="nTag">NEW</div>
+                                                                        <span class="card__text"><br><img src="Pictures/hot-deals/Untitled-4.png" height="200" width="100"></span>
+                                                                    </div>
+                                                                </div>
+                                                                <p class="h4 text-uppercase">samsung galaxy s4</p>
+                                                                <div class="rating">
+                                                                    <i class="stars fa fa-star"></i>
+                                                                    <i class="stars fa fa-star"></i>
+                                                                    <i class="stars fa fa-star"></i>
+                                                                    <i class="stars fa fa-star"></i>
+                                                                    <i class="stars fa fa-star-o"></i>
+                                                                    <br>
+                                                                    <h5 class="price-text-color">$650.99 &nbsp;&nbsp;&nbsp;<strike>$800</strike></h5>
+                                                                </div>
+                                                            </div><!-- /card -->
+                                                            <div class="smartPhone col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                                                                <div class="card effect__hover">
+                                                                    <div class="card__front">
+                                                                        <div class="sTag">SALE</div>
+                                                                        <span class="card__text"><br><img src="Pictures/hot-deals/Untitled-5.png" height="200" width="100"></span>
+                                                                    </div>
+                                                                    <div class="card__back">
+                                                                        <div class="sTag">SALE</div>
+                                                                        <span class="card__text"><br><img src="Pictures/hot-deals/Untitled-6.png" height="200" width="100"></span>
+                                                                    </div>
+                                                                </div>
+                                                                <p class="h4 text-uppercase">samsung galaxy s4</p>
+                                                                <div class="rating">
+                                                                    <i class="stars fa fa-star"></i>
+                                                                    <i class="stars fa fa-star"></i>
+                                                                    <i class="stars fa fa-star"></i>
+                                                                    <i class="stars fa fa-star"></i>
+                                                                    <i class="stars fa fa-star-o"></i>
+                                                                    <br>
+                                                                    <h5 class="price-text-color">$650.99 &nbsp;&nbsp;&nbsp;<strike>$800</strike></h5>
+                                                                </div>
+                                                            </div><!-- /card -->
+                                                            <div class="smartPhone col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                                                                <div class="card effect__hover">
+                                                                    <div class="card__front">
+                                                                        <div class="hTag">HOT</div>
+                                                                        <span class="card__text"><br><img src="Pictures/hot-deals/Untitled-11.png" height="200" width="150"></span>
+                                                                    </div>
+                                                                    <div class="card__back">
+                                                                        <div class="hTag">HOT</div>
+                                                                        <span class="card__text"><br><img src="Pictures/hot-deals/Untitled-12.png" height="200" width="150"></span>
+                                                                    </div>
+                                                                </div>
+                                                                <p class="h4 text-uppercase">samsung galaxy s4</p>
+                                                                <div class="rating">
+                                                                    <i class="stars fa fa-star"></i>
+                                                                    <i class="stars fa fa-star"></i>
+                                                                    <i class="stars fa fa-star"></i>
+                                                                    <i class="stars fa fa-star"></i>
+                                                                    <i class="stars fa fa-star-o"></i>
+                                                                    <br>
+                                                                    <h5 class="price-text-color">$650.99 &nbsp;&nbsp;&nbsp;<strike>$800</strike></h5>
+                                                                </div>
+                                                            </div><!-- /card -->
+                                                            <div class="smartPhone col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                                                                <div class="card effect__hover">
+                                                                    <div class="card__front">
+                                                                        <div class="sTag">SALE</div>
+                                                                        <span class="card__text"><br><img src="Pictures/hot-deals/Untitled-1.png" height="200" width="100"></span>
+                                                                    </div>
+                                                                    <div class="card__back">
+                                                                        <div class="sTag">SALE</div>
+                                                                        <span class="card__text"><br><img src="Pictures/hot-deals/Untitled-2.png" height="200" width="100"></span>
+                                                                    </div>
+                                                                </div>
+                                                                <p class="h4 text-uppercase">samsung galaxy s4</p>
+                                                                <div class="rating">
+                                                                    <i class="stars fa fa-star"></i>
+                                                                    <i class="stars fa fa-star"></i>
+                                                                    <i class="stars fa fa-star"></i>
+                                                                    <i class="stars fa fa-star"></i>
+                                                                    <i class="stars fa fa-star-o"></i>
+                                                                    <br>
+                                                                    <h5 class="price-text-color">$650.99 &nbsp;&nbsp;&nbsp;<strike>$800</strike></h5>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div><!-- /section -->
+
+                                            </main><!-- /main -->
+
+                                        </div><!-- /#wrapper -->
+                                    </div>
+                                </div>
+                                <br>
+                            </div>
+                            <div class="item">
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                        <div class="wrapper">
+
+                                            <main>
+
+                                                <div class="section">
+                                                    <div class="section__content clearfix">
+                                                        <div class="smartPhone col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                                                            <div class="card effect__hover">
+                                                                <div class="card__front">
+                                                                    <div class="nTag">NEW</div>
+                                                                    <span class="card__text"><br><img src="Pictures/hot-deals/Untitled-3.png" height="200" width="100"></span>
+                                                                </div>
+                                                                <div class="card__back">
+                                                                    <div class="nTag">NEW</div>
+                                                                    <span class="card__text"><br><img src="Pictures/hot-deals/Untitled-4.png" height="200" width="100"></span>
+                                                                </div>
+                                                            </div>
+                                                            <p class="h4 text-uppercase">samsung galaxy s4</p>
+                                                            <div class="rating">
+                                                                <i class="stars fa fa-star"></i>
+                                                                <i class="stars fa fa-star"></i>
+                                                                <i class="stars fa fa-star"></i>
+                                                                <i class="stars fa fa-star"></i>
+                                                                <i class="stars fa fa-star-o"></i>
+                                                                <br>
+                                                                <h5 class="price-text-color">$650.99 &nbsp;&nbsp;&nbsp;<strike>$800</strike></h5>
+                                                            </div>
+                                                        </div><!-- /card -->
+                                                        <div class="smartPhone col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                                                            <div class="card effect__hover">
+                                                                <div class="card__front">
+                                                                    <div class="sTag">SALE</div>
+                                                                    <span class="card__text"><br><img src="Pictures/hot-deals/Untitled-5.png" height="200" width="100"></span>
+                                                                </div>
+                                                                <div class="card__back">
+                                                                    <div class="sTag">SALE</div>
+                                                                    <span class="card__text"><br><img src="Pictures/hot-deals/Untitled-6.png" height="200" width="100"></span>
+                                                                </div>
+                                                            </div>
+                                                            <p class="h4 text-uppercase">samsung galaxy s4</p>
+                                                            <div class="rating">
+                                                                <i class="stars fa fa-star"></i>
+                                                                <i class="stars fa fa-star"></i>
+                                                                <i class="stars fa fa-star"></i>
+                                                                <i class="stars fa fa-star"></i>
+                                                                <i class="stars fa fa-star-o"></i>
+                                                                <br>
+                                                                <h5 class="price-text-color">$650.99 &nbsp;&nbsp;&nbsp;<strike>$800</strike></h5>
+                                                            </div>
+                                                        </div><!-- /card -->
+                                                        <div class="smartPhone col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                                                            <div class="card effect__hover">
+                                                                <div class="card__front">
+                                                                    <div class="hTag">HOT</div>
+                                                                    <span class="card__text"><br><img src="Pictures/hot-deals/Untitled-11.png" height="200" width="150"></span>
+                                                                </div>
+                                                                <div class="card__back">
+                                                                    <div class="hTag">HOT</div>
+                                                                    <span class="card__text"><br><img src="Pictures/hot-deals/Untitled-12.png" height="200" width="150"></span>
+                                                                </div>
+                                                            </div>
+                                                            <p class="h4 text-uppercase">samsung galaxy s4</p>
+                                                            <div class="rating">
+                                                                <i class="stars fa fa-star"></i>
+                                                                <i class="stars fa fa-star"></i>
+                                                                <i class="stars fa fa-star"></i>
+                                                                <i class="stars fa fa-star"></i>
+                                                                <i class="stars fa fa-star-o"></i>
+                                                                <br>
+                                                                <h5 class="price-text-color">$650.99 &nbsp;&nbsp;&nbsp;<strike>$800</strike></h5>
+                                                            </div>
+                                                        </div><!-- /card -->
+                                                        <div class="smartPhone col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                                                            <div class="card effect__hover">
+                                                                <div class="card__front">
+                                                                    <div class="sTag">SALE</div>
+                                                                    <span class="card__text"><br><img src="Pictures/hot-deals/Untitled-1.png" height="200" width="100"></span>
+                                                                </div>
+                                                                <div class="card__back">
+                                                                    <div class="sTag">SALE</div>
+                                                                    <span class="card__text"><br><img src="Pictures/hot-deals/Untitled-2.png" height="200" width="100"></span>
+                                                                </div>
+                                                            </div>
+                                                            <p class="h4 text-uppercase">samsung galaxy s4</p>
+                                                            <div class="rating">
+                                                                <i class="stars fa fa-star"></i>
+                                                                <i class="stars fa fa-star"></i>
+                                                                <i class="stars fa fa-star"></i>
+                                                                <i class="stars fa fa-star"></i>
+                                                                <i class="stars fa fa-star-o"></i>
+                                                                <br>
+                                                                <h5 class="price-text-color">$650.99 &nbsp;&nbsp;&nbsp;<strike>$800</strike></h5>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div><!-- /section -->
+
+                                            </main><!-- /main -->
+
+                                        </div><!-- /#wrapper -->
+                                    </div>
+                                </div>
+                                <br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br><br><br><br>
+                <div class="row">
+                    <div class="col-sm-offset-1 col-sm-10 col-md-offset-1 col-md-10 col-lg-offset1 col-lg-10">
+                        <div id="carousel-example-generic4" class="carousel slide" data-ride="carousel">
+                            <!-- Indicators -->
+                            <ol class="carousel-indicators">
+                                <li data-target="#carousel-example-generic4" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel-example-generic4" data-slide-to="1"></li>
+                                <li data-target="#carousel-example-generic4" data-slide-to="2"></li>
+                            </ol>
+
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner" role="listbox">
+                                <div class="item active impcar">
+                                    <img src="Pictures/banners/1.jpg" alt="">
+                                    <p>SAMSUNG <br><span class="sppro">GALAXY</span></p>
+                                </div>
+                                <div class="item impcar">
+                                    <img src="Pictures/banners/2.jpg" alt="">
+                                    <p>NEW TREND <br><span class="sppro">WATCHPHONE</span></p>
+
+                                </div>
+                                <div class="item impcar">
+                                    <img src="Pictures/banners/3.jpg" alt="">
+                                    <p>HIGH-DEMANDING <br><span class="sppro">IPhone MODEL</span> <br>AT LESS PRICE</p>
+
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+                <br><br><br><br><br>
+                <div class="row">
+                    <div class="col-sm-8 col-md-8">
+                        <h4>FEATURED PRODUCTS</h4>
+                    </div>
+                    <div class="col-sm-4 col-md-4">
+                        <!-- Controls -->
+                        <div class="controls pull-right hidden-xs">
+                            <a class="left fa fa-chevron-left btn btn-default" href="#carousel-example5" data-slide="prev"></a>
+                            <a class="right fa fa-chevron-right btn btn-default" href="#carousel-example5" data-slide="next"></a>
+                        </div>
+                    </div>
+                    <br><br>
+                    <hr>
+                </div>
+                <div class="row">
+                    <div id="carousel-example5" class="carousel phone slide hidden-xs" data-ride="carousel">
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                        <div class="wrapper">
+
+                                            <main>
+
+                                                <div class="section">
+                                                    <div class="section__content clearfix">
+                                                        <div class="smartPhone col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                                                            <div class="card effect__hover">
+                                                                <div class="card__front">
+                                                                    <div class="nTag">NEW</div>
+                                                                    <span class="card__text"><br><img src="Pictures/hot-deals/Untitled-3.png" height="200" width="100"></span>
+                                                                </div>
+                                                                <div class="card__back">
+                                                                    <div class="nTag">NEW</div>
+                                                                    <span class="card__text"><br><img src="Pictures/hot-deals/Untitled-4.png" height="200" width="100"></span>
+                                                                </div>
+                                                            </div>
+                                                            <p class="h4 text-uppercase">samsung galaxy s4</p>
+                                                            <div class="rating">
+                                                                <i class="stars fa fa-star"></i>
+                                                                <i class="stars fa fa-star"></i>
+                                                                <i class="stars fa fa-star"></i>
+                                                                <i class="stars fa fa-star"></i>
+                                                                <i class="stars fa fa-star-o"></i>
+                                                                <br>
+                                                                <h5 class="price-text-color">$650.99 &nbsp;&nbsp;&nbsp;<strike>$800</strike></h5>
+                                                            </div>
+                                                        </div><!-- /card -->
+                                                        <div class="smartPhone col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                                                            <div class="card effect__hover">
+                                                                <div class="card__front">
+                                                                    <div class="sTag">SALE</div>
+                                                                    <span class="card__text"><br><img src="Pictures/hot-deals/Untitled-5.png" height="200" width="100"></span>
+                                                                </div>
+                                                                <div class="card__back">
+                                                                    <div class="sTag">SALE</div>
+                                                                    <span class="card__text"><br><img src="Pictures/hot-deals/Untitled-6.png" height="200" width="100"></span>
+                                                                </div>
+                                                            </div>
+                                                            <p class="h4 text-uppercase">samsung galaxy s4</p>
+                                                            <div class="rating">
+                                                                <i class="stars fa fa-star"></i>
+                                                                <i class="stars fa fa-star"></i>
+                                                                <i class="stars fa fa-star"></i>
+                                                                <i class="stars fa fa-star"></i>
+                                                                <i class="stars fa fa-star-o"></i>
+                                                                <br>
+                                                                <h5 class="price-text-color">$650.99 &nbsp;&nbsp;&nbsp;<strike>$800</strike></h5>
+                                                            </div>
+                                                        </div><!-- /card -->
+                                                        <div class="smartPhone col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                                                            <div class="card effect__hover">
+                                                                <div class="card__front">
+                                                                    <div class="hTag">HOT</div>
+                                                                    <span class="card__text"><br><img src="Pictures/hot-deals/Untitled-11.png" height="200" width="150"></span>
+                                                                </div>
+                                                                <div class="card__back">
+                                                                    <div class="hTag">HOT</div>
+                                                                    <span class="card__text"><br><img src="Pictures/hot-deals/Untitled-12.png" height="200" width="150"></span>
+                                                                </div>
+                                                            </div>
+                                                            <p class="h4 text-uppercase">samsung galaxy s4</p>
+                                                            <div class="rating">
+                                                                <i class="stars fa fa-star"></i>
+                                                                <i class="stars fa fa-star"></i>
+                                                                <i class="stars fa fa-star"></i>
+                                                                <i class="stars fa fa-star"></i>
+                                                                <i class="stars fa fa-star-o"></i>
+                                                                <br>
+                                                                <h5 class="price-text-color">$650.99 &nbsp;&nbsp;&nbsp;<strike>$800</strike></h5>
+                                                            </div>
+                                                        </div><!-- /card -->
+                                                        <div class="smartPhone col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                                                            <div class="card effect__hover">
+                                                                <div class="card__front">
+                                                                    <div class="sTag">SALE</div>
+                                                                    <span class="card__text"><br><img src="Pictures/hot-deals/Untitled-1.png" height="200" width="100"></span>
+                                                                </div>
+                                                                <div class="card__back">
+                                                                    <div class="sTag">SALE</div>
+                                                                    <span class="card__text"><br><img src="Pictures/hot-deals/Untitled-2.png" height="200" width="100"></span>
+                                                                </div>
+                                                            </div>
+                                                            <p class="h4 text-uppercase">samsung galaxy s4</p>
+                                                            <div class="rating">
+                                                                <i class="stars fa fa-star"></i>
+                                                                <i class="stars fa fa-star"></i>
+                                                                <i class="stars fa fa-star"></i>
+                                                                <i class="stars fa fa-star"></i>
+                                                                <i class="stars fa fa-star-o"></i>
+                                                                <br>
+                                                                <h5 class="price-text-color">$650.99 &nbsp;&nbsp;&nbsp;<strike>$800</strike></h5>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div><!-- /section -->
+
+                                            </main><!-- /main -->
+
+                                        </div><!-- /#wrapper -->
+                                    </div>
+                                </div>
+                                <br>
+                            </div>
+                            <div class="item">
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                        <div class="wrapper">
+
+                                            <main>
+
+                                                <div class="section">
+                                                    <div class="section__content clearfix">
+                                                        <div class="smartPhone col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                                                            <div class="card effect__hover">
+                                                                <div class="card__front">
+                                                                    <div class="nTag">NEW</div>
+                                                                    <span class="card__text"><br><img src="Pictures/hot-deals/Untitled-3.png" height="200" width="100"></span>
+                                                                </div>
+                                                                <div class="card__back">
+                                                                    <div class="nTag">NEW</div>
+                                                                    <span class="card__text"><br><img src="Pictures/hot-deals/Untitled-4.png" height="200" width="100"></span>
+                                                                </div>
+                                                            </div>
+                                                            <p class="h4 text-uppercase">samsung galaxy s4</p>
+                                                            <div class="rating">
+                                                                <i class="stars fa fa-star"></i>
+                                                                <i class="stars fa fa-star"></i>
+                                                                <i class="stars fa fa-star"></i>
+                                                                <i class="stars fa fa-star"></i>
+                                                                <i class="stars fa fa-star-o"></i>
+                                                                <br>
+                                                                <h5 class="price-text-color">$650.99 &nbsp;&nbsp;&nbsp;<strike>$800</strike></h5>
+                                                            </div>
+                                                        </div><!-- /card -->
+                                                        <div class="smartPhone col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                                                            <div class="card effect__hover">
+                                                                <div class="card__front">
+                                                                    <div class="sTag">SALE</div>
+                                                                    <span class="card__text"><br><img src="Pictures/hot-deals/Untitled-5.png" height="200" width="100"></span>
+                                                                </div>
+                                                                <div class="card__back">
+                                                                    <div class="sTag">SALE</div>
+                                                                    <span class="card__text"><br><img src="Pictures/hot-deals/Untitled-6.png" height="200" width="100"></span>
+                                                                </div>
+                                                            </div>
+                                                            <p class="h4 text-uppercase">samsung galaxy s4</p>
+                                                            <div class="rating">
+                                                                <i class="stars fa fa-star"></i>
+                                                                <i class="stars fa fa-star"></i>
+                                                                <i class="stars fa fa-star"></i>
+                                                                <i class="stars fa fa-star"></i>
+                                                                <i class="stars fa fa-star-o"></i>
+                                                                <br>
+                                                                <h5 class="price-text-color">$650.99 &nbsp;&nbsp;&nbsp;<strike>$800</strike></h5>
+                                                            </div>
+                                                        </div><!-- /card -->
+                                                        <div class="smartPhone col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                                                            <div class="card effect__hover">
+                                                                <div class="card__front">
+                                                                    <div class="hTag">HOT</div>
+                                                                    <span class="card__text"><br><img src="Pictures/hot-deals/Untitled-11.png" height="200" width="150"></span>
+                                                                </div>
+                                                                <div class="card__back">
+                                                                    <div class="hTag">HOT</div>
+                                                                    <span class="card__text"><br><img src="Pictures/hot-deals/Untitled-12.png" height="200" width="150"></span>
+                                                                </div>
+                                                            </div>
+                                                            <p class="h4 text-uppercase">samsung galaxy s4</p>
+                                                            <div class="rating">
+                                                                <i class="stars fa fa-star"></i>
+                                                                <i class="stars fa fa-star"></i>
+                                                                <i class="stars fa fa-star"></i>
+                                                                <i class="stars fa fa-star"></i>
+                                                                <i class="stars fa fa-star-o"></i>
+                                                                <br>
+                                                                <h5 class="price-text-color">$650.99 &nbsp;&nbsp;&nbsp;<strike>$800</strike></h5>
+                                                            </div>
+                                                        </div><!-- /card -->
+                                                        <div class="smartPhone col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                                                            <div class="card effect__hover">
+                                                                <div class="card__front">
+                                                                    <div class="sTag">SALE</div>
+                                                                    <span class="card__text"><br><img src="Pictures/hot-deals/Untitled-1.png" height="200" width="100"></span>
+                                                                </div>
+                                                                <div class="card__back">
+                                                                    <div class="sTag">SALE</div>
+                                                                    <span class="card__text"><br><img src="Pictures/hot-deals/Untitled-2.png" height="200" width="100"></span>
+                                                                </div>
+                                                            </div>
+                                                            <p class="h4 text-uppercase">samsung galaxy s4</p>
+                                                            <div class="rating">
+                                                                <i class="stars fa fa-star"></i>
+                                                                <i class="stars fa fa-star"></i>
+                                                                <i class="stars fa fa-star"></i>
+                                                                <i class="stars fa fa-star"></i>
+                                                                <i class="stars fa fa-star-o"></i>
+                                                                <br>
+                                                                <h5 class="price-text-color">$650.99 &nbsp;&nbsp;&nbsp;<strike>$800</strike></h5>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div><!-- /section -->
+
+                                            </main><!-- /main -->
+
+                                        </div><!-- /#wrapper -->
+                                    </div>
+                                </div>
+                                <br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br><br><br><br>
+                <div class="row">
+                    <div class="advertisement">
+                        <img src="Pictures/banners/3.jpg" alt="" width="100%">
+
+                        <p class="text-right"><span class="sppro">ONE STOP PLACE FOR</span><br>ALL YOUR SHOPPING NEEDS</p>
+
+                    </div>
+                </div>
+                <br><br><br><br><br>
+                <div class="row">
+                    <div class="col-sm-8 col-md-8">
+                        <h4>SPECIAL DEALS</h4>
+                    </div>
+                    <div class="col-sm-4 col-md-4">
+                        <!-- Controls -->
+                        <div class="controls pull-right hidden-xs">
+                            <a class="left fa fa-chevron-left btn btn-default" href="#carousel-example6" data-slide="prev"></a>
+                            <a class="right fa fa-chevron-right btn btn-default" href="#carousel-example6" data-slide="next"></a>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <br>
+                <div class="row">
+                    <div id="carousel-example6" class="carousel slide hidden-xs" data-ride="carousel">
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <div class="row">
+                                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                        <div class="col-item">
+                                            <div class="row">
+                                                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                                    <div class="photo">
+                                                        <img src="Pictures/products/1.jpg" class="img-responsive" alt="a" />
+                                                        <div class="h tag">HOT</div>
+                                                    </div>
+                                                </div>
+                                                <div class="info">
+                                                    <div class="price col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                                        <h4>Sample Product</h4>
+                                                        <div class="rating">
+                                                            <i class="stars fa fa-star"></i>
+                                                            <i class="stars fa fa-star"></i>
+                                                            <i class="stars fa fa-star"></i>
+                                                            <i class="stars fa fa-star"></i>
+                                                            <i class="stars fa fa-star"></i>
+                                                            <h5 class="price-text-color">$199.99</h5>
+                                                            <button class="btn3d btn btn-carousel text-capitalize">add to cart</button>                                                    </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                        <div class="col-item">
+                                            <div class="row">
+                                                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                                    <div class="photo">
+                                                        <img src="Pictures/products/2.jpg" class="img-responsive" alt="a" />
+                                                    </div>
+                                                </div>
+                                                <div class="info">
+                                                    <div class="price col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                                        <h4>Sample Product</h4>
+                                                        <div class="rating">
+                                                            <i class="stars fa fa-star"></i>
+                                                            <i class="stars fa fa-star"></i>
+                                                            <i class="stars fa fa-star"></i>
+                                                            <i class="stars fa fa-star"></i>
+                                                            <i class="stars fa fa-star"></i>
+                                                            <h5 class="price-text-color">$199.99</h5>
+                                                            <button class="btn3d btn btn-carousel text-capitalize">add to cart</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                        <div class="col-item">
+                                            <div class="row">
+                                                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                                    <div class="photo">
+                                                        <img src="Pictures/products/2.jpg" class="img-responsive" alt="a" />
+                                                    </div>
+                                                </div>
+                                                <div class="info">
+                                                    <div class="price col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                                        <h4>Sample Product</h4>
+                                                        <div class="rating">
+                                                            <i class="stars fa fa-star"></i>
+                                                            <i class="stars fa fa-star"></i>
+                                                            <i class="stars fa fa-star"></i>
+                                                            <i class="stars fa fa-star"></i>
+                                                            <i class="stars fa fa-star"></i>
+                                                            <h5 class="price-text-color">$199.99</h5>
+                                                            <button class="btn3d btn btn-carousel text-capitalize">add to cart</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="row">
+                                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                        <div class="col-item">
+                                            <div class="row">
+                                                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                                    <div class="photo">
+                                                        <img src="Pictures/products/1.jpg" class="img-responsive" alt="a" />
+                                                        <div class="h tag">HOT</div>
+                                                    </div>
+                                                </div>
+                                                <div class="info">
+                                                    <div class="price col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                                        <h4>Sample Product</h4>
+                                                        <div class="rating">
+                                                            <i class="stars fa fa-star"></i>
+                                                            <i class="stars fa fa-star"></i>
+                                                            <i class="stars fa fa-star"></i>
+                                                            <i class="stars fa fa-star"></i>
+                                                            <i class="stars fa fa-star"></i>
+                                                            <h5 class="price-text-color">$199.99</h5>
+                                                            <button class="btn3d btn btn-carousel text-capitalize">add to cart</button>                                                    </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                        <div class="col-item">
+                                            <div class="row">
+                                                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                                    <div class="photo">
+                                                        <img src="Pictures/products/2.jpg" class="img-responsive" alt="a" />
+                                                    </div>
+                                                </div>
+                                                <div class="info">
+                                                    <div class="price col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                                        <h4>Sample Product</h4>
+                                                        <div class="rating">
+                                                            <i class="stars fa fa-star"></i>
+                                                            <i class="stars fa fa-star"></i>
+                                                            <i class="stars fa fa-star"></i>
+                                                            <i class="stars fa fa-star"></i>
+                                                            <i class="stars fa fa-star"></i>
+                                                            <h5 class="price-text-color">$199.99</h5>
+                                                            <button class="btn3d btn btn-carousel text-capitalize">add to cart</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                        <div class="col-item">
+                                            <div class="row">
+                                                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                                    <div class="photo">
+                                                        <img src="Pictures/products/2.jpg" class="img-responsive" alt="a" />
+                                                    </div>
+                                                </div>
+                                                <div class="info">
+                                                    <div class="price col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                                        <h4>Sample Product</h4>
+                                                        <div class="rating">
+                                                            <i class="stars fa fa-star"></i>
+                                                            <i class="stars fa fa-star"></i>
+                                                            <i class="stars fa fa-star"></i>
+                                                            <i class="stars fa fa-star"></i>
+                                                            <i class="stars fa fa-star"></i>
+                                                            <h5 class="price-text-color">$199.99</h5>
+                                                            <button class="btn3d btn btn-carousel text-capitalize">add to cart</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="row">
+                                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                        <div class="col-item">
+                                            <div class="row">
+                                                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                                    <div class="photo">
+                                                        <img src="Pictures/products/1.jpg" class="img-responsive" alt="a" />
+                                                        <div class="h tag">HOT</div>
+                                                    </div>
+                                                </div>
+                                                <div class="info">
+                                                    <div class="price col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                                        <h4>Sample Product</h4>
+                                                        <div class="rating">
+                                                            <i class="stars fa fa-star"></i>
+                                                            <i class="stars fa fa-star"></i>
+                                                            <i class="stars fa fa-star"></i>
+                                                            <i class="stars fa fa-star"></i>
+                                                            <i class="stars fa fa-star"></i>
+                                                            <h5 class="price-text-color">$199.99</h5>
+                                                            <button class="btn3d btn btn-carousel text-capitalize">add to cart</button>                                                    </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                        <div class="col-item">
+                                            <div class="row">
+                                                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                                    <div class="photo">
+                                                        <img src="Pictures/products/2.jpg" class="img-responsive" alt="a" />
+                                                    </div>
+                                                </div>
+                                                <div class="info">
+                                                    <div class="price col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                                        <h4>Sample Product</h4>
+                                                        <div class="rating">
+                                                            <i class="stars fa fa-star"></i>
+                                                            <i class="stars fa fa-star"></i>
+                                                            <i class="stars fa fa-star"></i>
+                                                            <i class="stars fa fa-star"></i>
+                                                            <i class="stars fa fa-star"></i>
+                                                            <h5 class="price-text-color">$199.99</h5>
+                                                            <button class="btn3d btn btn-carousel text-capitalize">add to cart</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                        <div class="col-item">
+                                            <div class="row">
+                                                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                                    <div class="photo">
+                                                        <img src="Pictures/products/2.jpg" class="img-responsive" alt="a" />
+                                                    </div>
+                                                </div>
+                                                <div class="info">
+                                                    <div class="price col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                                        <h4>Sample Product</h4>
+                                                        <div class="rating">
+                                                            <i class="stars fa fa-star"></i>
+                                                            <i class="stars fa fa-star"></i>
+                                                            <i class="stars fa fa-star"></i>
+                                                            <i class="stars fa fa-star"></i>
+                                                            <i class="stars fa fa-star"></i>
+                                                            <h5 class="price-text-color">$199.99</h5>
+                                                            <button class="btn3d btn btn-carousel text-capitalize">add to cart</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="row">
+                                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                        <div class="col-item">
+                                            <div class="row">
+                                                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                                    <div class="photo">
+                                                        <img src="Pictures/products/1.jpg" class="img-responsive" alt="a" />
+                                                        <div class="h tag">HOT</div>
+                                                    </div>
+                                                </div>
+                                                <div class="info">
+                                                    <div class="price col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                                        <h4>Sample Product</h4>
+                                                        <div class="rating">
+                                                            <i class="stars fa fa-star"></i>
+                                                            <i class="stars fa fa-star"></i>
+                                                            <i class="stars fa fa-star"></i>
+                                                            <i class="stars fa fa-star"></i>
+                                                            <i class="stars fa fa-star"></i>
+                                                            <h5 class="price-text-color">$199.99</h5>
+                                                            <button class="btn3d btn btn-carousel text-capitalize">add to cart</button>                                                    </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                        <div class="col-item">
+                                            <div class="row">
+                                                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                                    <div class="photo">
+                                                        <img src="Pictures/products/2.jpg" class="img-responsive" alt="a" />
+                                                    </div>
+                                                </div>
+                                                <div class="info">
+                                                    <div class="price col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                                        <h4>Sample Product</h4>
+                                                        <div class="rating">
+                                                            <i class="stars fa fa-star"></i>
+                                                            <i class="stars fa fa-star"></i>
+                                                            <i class="stars fa fa-star"></i>
+                                                            <i class="stars fa fa-star"></i>
+                                                            <i class="stars fa fa-star"></i>
+                                                            <h5 class="price-text-color">$199.99</h5>
+                                                            <button class="btn3d btn btn-carousel text-capitalize">add to cart</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                        <div class="col-item">
+                                            <div class="row">
+                                                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                                    <div class="photo">
+                                                        <img src="Pictures/products/2.jpg" class="img-responsive" alt="a" />
+                                                    </div>
+                                                </div>
+                                                <div class="info">
+                                                    <div class="price col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                                        <h4>Sample Product</h4>
+                                                        <div class="rating">
+                                                            <i class="stars fa fa-star"></i>
+                                                            <i class="stars fa fa-star"></i>
+                                                            <i class="stars fa fa-star"></i>
+                                                            <i class="stars fa fa-star"></i>
+                                                            <i class="stars fa fa-star"></i>
+                                                            <h5 class="price-text-color">$199.99</h5>
+                                                            <button class="btn3d btn btn-carousel text-capitalize">add to cart</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br><br><br><br><br>
+                <div class="row">
+                    <div class="col-sm-8 col-md-8">
+                        <h4>FEATURED PRODUCTS</h4>
+                    </div>
+                    <div class="col-sm-4 col-md-4">
+                        <!-- Controls -->
+                        <div class="controls pull-right hidden-xs">
+                            <a class="left fa fa-chevron-left btn btn-default" href="#carousel-example7" data-slide="prev"></a>
+                            <a class="right fa fa-chevron-right btn btn-default" href="#carousel-example7" data-slide="next"></a>
+                        </div>
+                    </div>
+                    <br><br>
+                    <hr>
+                </div>
+                <br>
+                <div class="row">
+                    <div id="carousel-example7" class="carousel slide" data-ride="carousel">
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <div class="row">
+                                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                        <img src="Pictures/blog-post/1.jpg" alt="">
+                                        <br>
+                                        <p class="h5 font">Simple Blog Demo From Fashion Web</p>
+                                        <p class="h6">By Jone Doe 22-April 2014-03 comments</p>
+                                        <p class="h6">Lorem ipsum dolor sit amet, consectetur adipisicing <br> elit. A alias amet aspernatur, at consectetur corporis<br>cum ea et fugiat incidunt itaque labore nostrum <br> porroquasi qui quidem, sunt totam veritatis?</p>
+                                        <button class="btn read">Read More</button>
+                                    </div>
+                                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                        <img src="Pictures/blog-post/1.jpg" alt="">
+                                        <br>
+                                        <p class="h5 font">Simple Blog Demo From Fashion Web</p>
+                                        <p class="h6">By Jone Doe 22-April 2014-03 comments</p>
+                                        <p class="h6">Lorem ipsum dolor sit amet, consectetur adipisicing <br> elit. A alias amet aspernatur, at consectetur corporis<br>cum ea et fugiat incidunt itaque labore nostrum <br> porroquasi qui quidem, sunt totam veritatis?</p>
+                                        <button class="btn read">Read More</button>
+                                    </div>
+                                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                        <img src="Pictures/blog-post/1.jpg" alt="">
+                                        <br>
+                                        <p class="h5 font">Simple Blog Demo From Fashion Web</p>
+                                        <p class="h6">By Jone Doe 22-April 2014-03 comments</p>
+                                        <p class="h6">Lorem ipsum dolor sit amet, consectetur adipisicing <br> elit. A alias amet aspernatur, at consectetur corporis<br>cum ea et fugiat incidunt itaque labore nostrum <br> porroquasi qui quidem, sunt totam veritatis?</p>
+                                        <button class="btn read">Read More</button>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="item">
+                                <div class="row">
+                                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                        <img src="Pictures/blog-post/1.jpg" alt="">
+                                        <br>
+                                        <p class="h5 font">Simple Blog Demo From Fashion Web</p>
+                                        <p class="h6">By Jone Doe 22-April 2014-03 comments</p>
+                                        <p class="h6">Lorem ipsum dolor sit amet, consectetur adipisicing <br> elit. A alias amet aspernatur, at consectetur corporis<br>cum ea et fugiat incidunt itaque labore nostrum <br> porroquasi qui quidem, sunt totam veritatis?</p>
+                                        <button class="btn read">Read More</button>
+                                    </div>
+                                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                        <img src="Pictures/blog-post/1.jpg" alt="">
+                                        <br>
+                                        <p class="h5 font">Simple Blog Demo From Fashion Web</p>
+                                        <p class="h6">By Jone Doe 22-April 2014-03 comments</p>
+                                        <p class="h6">Lorem ipsum dolor sit amet, consectetur adipisicing <br> elit. A alias amet aspernatur, at consectetur corporis<br>cum ea et fugiat incidunt itaque labore nostrum <br> porroquasi qui quidem, sunt totam veritatis?</p>
+                                        <button class="btn read">Read More</button>
+                                    </div>
+                                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                        <img src="Pictures/blog-post/1.jpg" alt="">
+                                        <br>
+                                        <p class="h5 font">Simple Blog Demo From Fashion Web</p>
+                                        <p class="h6">By Jone Doe 22-April 2014-03 comments</p>
+                                        <p class="h6">Lorem ipsum dolor sit amet, consectetur adipisicing <br> elit. A alias amet aspernatur, at consectetur corporis<br>cum ea et fugiat incidunt itaque labore nostrum <br> porroquasi qui quidem, sunt totam veritatis?</p>
+                                        <button class="btn read">Read More</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br><br><br><br><br>
+                <div class="row">
+                    <div class="col-sm-8 col-md-8">
+                        <h4>FEATURED PRODUCTS</h4>
+                    </div>
+                    <div class="col-sm-4 col-md-4">
+                        <!-- Controls -->
+                        <div class="controls pull-right hidden-xs">
+                            <a class="left fa fa-chevron-left btn btn-default" href="#carousel-example8" data-slide="prev"></a>
+                            <a class="right fa fa-chevron-right btn btn-default" href="#carousel-example8" data-slide="next"></a>
+                        </div>
+                    </div>
+                    <br><br>
+                    <hr>
+                </div>
+                <div class="row">
+                    <div id="carousel-example8" class="carousel phone slide hidden-xs" data-ride="carousel">
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                        <div class="wrapper">
+
+                                            <main>
+
+                                                <div class="section">
+                                                    <div class="section__content clearfix">
+                                                        <div class="smartPhone col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                                                            <div class="card effect__hover">
+                                                                <div class="card__front">
+                                                                    <div class="nTag">NEW</div>
+                                                                    <span class="card__text"><br><img src="Pictures/hot-deals/Untitled-3.png" height="200" width="100"></span>
+                                                                </div>
+                                                                <div class="card__back">
+                                                                    <div class="nTag">NEW</div>
+                                                                    <span class="card__text"><br><img src="Pictures/hot-deals/Untitled-4.png" height="200" width="100"></span>
+                                                                </div>
+                                                            </div>
+                                                            <p class="h4 text-uppercase">samsung galaxy s4</p>
+                                                            <div class="rating">
+                                                                <i class="stars fa fa-star"></i>
+                                                                <i class="stars fa fa-star"></i>
+                                                                <i class="stars fa fa-star"></i>
+                                                                <i class="stars fa fa-star"></i>
+                                                                <i class="stars fa fa-star-o"></i>
+                                                                <br>
+                                                                <h5 class="price-text-color">$650.99 &nbsp;&nbsp;&nbsp;<strike>$800</strike></h5>
+                                                            </div>
+                                                        </div><!-- /card -->
+                                                        <div class="smartPhone col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                                                            <div class="card effect__hover">
+                                                                <div class="card__front">
+                                                                    <div class="sTag">SALE</div>
+                                                                    <span class="card__text"><br><img src="Pictures/hot-deals/Untitled-5.png" height="200" width="100"></span>
+                                                                </div>
+                                                                <div class="card__back">
+                                                                    <div class="sTag">SALE</div>
+                                                                    <span class="card__text"><br><img src="Pictures/hot-deals/Untitled-6.png" height="200" width="100"></span>
+                                                                </div>
+                                                            </div>
+                                                            <p class="h4 text-uppercase">samsung galaxy s4</p>
+                                                            <div class="rating">
+                                                                <i class="stars fa fa-star"></i>
+                                                                <i class="stars fa fa-star"></i>
+                                                                <i class="stars fa fa-star"></i>
+                                                                <i class="stars fa fa-star"></i>
+                                                                <i class="stars fa fa-star-o"></i>
+                                                                <br>
+                                                                <h5 class="price-text-color">$650.99 &nbsp;&nbsp;&nbsp;<strike>$800</strike></h5>
+                                                            </div>
+                                                        </div><!-- /card -->
+                                                        <div class="smartPhone col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                                                            <div class="card effect__hover">
+                                                                <div class="card__front">
+                                                                    <div class="hTag">HOT</div>
+                                                                    <span class="card__text"><br><img src="Pictures/hot-deals/Untitled-11.png" height="200" width="150"></span>
+                                                                </div>
+                                                                <div class="card__back">
+                                                                    <div class="hTag">HOT</div>
+                                                                    <span class="card__text"><br><img src="Pictures/hot-deals/Untitled-12.png" height="200" width="150"></span>
+                                                                </div>
+                                                            </div>
+                                                            <p class="h4 text-uppercase">samsung galaxy s4</p>
+                                                            <div class="rating">
+                                                                <i class="stars fa fa-star"></i>
+                                                                <i class="stars fa fa-star"></i>
+                                                                <i class="stars fa fa-star"></i>
+                                                                <i class="stars fa fa-star"></i>
+                                                                <i class="stars fa fa-star-o"></i>
+                                                                <br>
+                                                                <h5 class="price-text-color">$650.99 &nbsp;&nbsp;&nbsp;<strike>$800</strike></h5>
+                                                            </div>
+                                                        </div><!-- /card -->
+                                                        <div class="smartPhone col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                                                            <div class="card effect__hover">
+                                                                <div class="card__front">
+                                                                    <div class="sTag">SALE</div>
+                                                                    <span class="card__text"><br><img src="Pictures/hot-deals/Untitled-1.png" height="200" width="100"></span>
+                                                                </div>
+                                                                <div class="card__back">
+                                                                    <div class="sTag">SALE</div>
+                                                                    <span class="card__text"><br><img src="Pictures/hot-deals/Untitled-2.png" height="200" width="100"></span>
+                                                                </div>
+                                                            </div>
+                                                            <p class="h4 text-uppercase">samsung galaxy s4</p>
+                                                            <div class="rating">
+                                                                <i class="stars fa fa-star"></i>
+                                                                <i class="stars fa fa-star"></i>
+                                                                <i class="stars fa fa-star"></i>
+                                                                <i class="stars fa fa-star"></i>
+                                                                <i class="stars fa fa-star-o"></i>
+                                                                <br>
+                                                                <h5 class="price-text-color">$650.99 &nbsp;&nbsp;&nbsp;<strike>$800</strike></h5>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div><!-- /section -->
+
+                                            </main><!-- /main -->
+
+                                        </div><!-- /#wrapper -->
+                                    </div>
+                                </div>
+                                <br>
+                            </div>
+                            <div class="item">
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                        <div class="wrapper">
+
+                                            <main>
+
+                                                <div class="section">
+                                                    <div class="section__content clearfix">
+                                                        <div class="smartPhone col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                                                            <div class="card effect__hover">
+                                                                <div class="card__front">
+                                                                    <div class="nTag">NEW</div>
+                                                                    <span class="card__text"><br><img src="Pictures/hot-deals/Untitled-3.png" height="200" width="100"></span>
+                                                                </div>
+                                                                <div class="card__back">
+                                                                    <div class="nTag">NEW</div>
+                                                                    <span class="card__text"><br><img src="Pictures/hot-deals/Untitled-4.png" height="200" width="100"></span>
+                                                                </div>
+                                                            </div>
+                                                            <p class="h4 text-uppercase">samsung galaxy s4</p>
+                                                            <div class="rating">
+                                                                <i class="stars fa fa-star"></i>
+                                                                <i class="stars fa fa-star"></i>
+                                                                <i class="stars fa fa-star"></i>
+                                                                <i class="stars fa fa-star"></i>
+                                                                <i class="stars fa fa-star-o"></i>
+                                                                <br>
+                                                                <h5 class="price-text-color">$650.99 &nbsp;&nbsp;&nbsp;<strike>$800</strike></h5>
+                                                            </div>
+                                                        </div><!-- /card -->
+                                                        <div class="smartPhone col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                                                            <div class="card effect__hover">
+                                                                <div class="card__front">
+                                                                    <div class="sTag">SALE</div>
+                                                                    <span class="card__text"><br><img src="Pictures/hot-deals/Untitled-5.png" height="200" width="100"></span>
+                                                                </div>
+                                                                <div class="card__back">
+                                                                    <div class="sTag">SALE</div>
+                                                                    <span class="card__text"><br><img src="Pictures/hot-deals/Untitled-6.png" height="200" width="100"></span>
+                                                                </div>
+                                                            </div>
+                                                            <p class="h4 text-uppercase">samsung galaxy s4</p>
+                                                            <div class="rating">
+                                                                <i class="stars fa fa-star"></i>
+                                                                <i class="stars fa fa-star"></i>
+                                                                <i class="stars fa fa-star"></i>
+                                                                <i class="stars fa fa-star"></i>
+                                                                <i class="stars fa fa-star-o"></i>
+                                                                <br>
+                                                                <h5 class="price-text-color">$650.99 &nbsp;&nbsp;&nbsp;<strike>$800</strike></h5>
+                                                            </div>
+                                                        </div><!-- /card -->
+                                                        <div class="smartPhone col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                                                            <div class="card effect__hover">
+                                                                <div class="card__front">
+                                                                    <div class="hTag">HOT</div>
+                                                                    <span class="card__text"><br><img src="Pictures/hot-deals/Untitled-11.png" height="200" width="150"></span>
+                                                                </div>
+                                                                <div class="card__back">
+                                                                    <div class="hTag">HOT</div>
+                                                                    <span class="card__text"><br><img src="Pictures/hot-deals/Untitled-12.png" height="200" width="150"></span>
+                                                                </div>
+                                                            </div>
+                                                            <p class="h4 text-uppercase">samsung galaxy s4</p>
+                                                            <div class="rating">
+                                                                <i class="stars fa fa-star"></i>
+                                                                <i class="stars fa fa-star"></i>
+                                                                <i class="stars fa fa-star"></i>
+                                                                <i class="stars fa fa-star"></i>
+                                                                <i class="stars fa fa-star-o"></i>
+                                                                <br>
+                                                                <h5 class="price-text-color">$650.99 &nbsp;&nbsp;&nbsp;<strike>$800</strike></h5>
+                                                            </div>
+                                                        </div><!-- /card -->
+                                                        <div class="smartPhone col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                                                            <div class="card effect__hover">
+                                                                <div class="card__front">
+                                                                    <div class="sTag">SALE</div>
+                                                                    <span class="card__text"><br><img src="Pictures/hot-deals/Untitled-1.png" height="200" width="100"></span>
+                                                                </div>
+                                                                <div class="card__back">
+                                                                    <div class="sTag">SALE</div>
+                                                                    <span class="card__text"><br><img src="Pictures/hot-deals/Untitled-2.png" height="200" width="100"></span>
+                                                                </div>
+                                                            </div>
+                                                            <p class="h4 text-uppercase">samsung galaxy s4</p>
+                                                            <div class="rating">
+                                                                <i class="stars fa fa-star"></i>
+                                                                <i class="stars fa fa-star"></i>
+                                                                <i class="stars fa fa-star"></i>
+                                                                <i class="stars fa fa-star"></i>
+                                                                <i class="stars fa fa-star-o"></i>
+                                                                <br>
+                                                                <h5 class="price-text-color">$650.99 &nbsp;&nbsp;&nbsp;<strike>$800</strike></h5>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div><!-- /section -->
+
+                                            </main><!-- /main -->
+
+                                        </div><!-- /#wrapper -->
+                                    </div>
+                                </div>
+                                <br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br><br><br>
+                <div class="row">
+                    <div class="advertisement2">
+                        <img src="Pictures/banners/3.jpg" alt="" width="100%">
+
+                        <p class="text-right"><span class="sppro">ONE STOP PLACE FOR</span><br>ALL YOUR SHOPPING NEEDS</p>
+
+                    </div>
+                </div>
+                <br><br><br>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!--Blog starts here-->
+
+<section id="brand">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8 col-md-8">
+                <h4>FEATURED PRODUCTS</h4>
+            </div>
+            <div class="col-sm-4 col-md-4">
+                <!-- Controls -->
+                <div class="controls pull-right hidden-xs">
+                    <a class="left fa fa-chevron-left btn btn-default" href="#carousel-example9" data-slide="prev"></a>
+                    <a class="right fa fa-chevron-right btn btn-default" href="#carousel-example9" data-slide="next"></a>
+                </div>
+            </div>
+            <br><br>
+            <hr>
+        </div>
+        <br><br>
+        <div class="row">
+            <div id="carousel-example9" class="carousel phone slide hidden-xs" data-ride="carousel">
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                            <img src="Pictures/brands/brand1.png" alt="">
+                        </div>
+                        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                            <img src="Pictures/brands/brand2.png" alt="">
+                        </div>
+                        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                            <img src="Pictures/brands/brand3.png" alt="">
+                        </div>
+                        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                            <img src="Pictures/brands/brand4.png" alt="">
+                        </div>
+                        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                            <img src="Pictures/brands/brand5.png" alt="">
+                        </div>
+                        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                            <img src="Pictures/brands/brand6.png" alt="">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                            <img src="Pictures/brands/b1.png" alt="">
+                        </div>
+                        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                            <img src="Pictures/brands/b2.png" alt="">
+                        </div>
+                        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                            <img src="Pictures/brands/b3.png" alt="">
+                        </div>
+                        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                            <img src="Pictures/brands/b4.png" alt="">
+                        </div>
+                        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                            <img src="Pictures/brands/b5.png" alt="">
+                        </div>
+                        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                            <img src="Pictures/brands/b6.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br>
+    </div>
+</section>
+
+<!--Pages starts here-->
+
+<section id="nothing">
+    <hr>
+</section>
+
+<!--Features starts here-->
+
+<section id="upperFooter">
+    <div class="container">
+        <div class="row">
+            
+            <div class="hidden-xs col-sm-6 col-md-3 col-lg-3">
+                <img src="Pictures/logo.png" alt="">
+                <br>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, commodi ea excepturi exercitationem illo impedit incidunt magnam maxime nemo nesciunt optio quam quis repudiandae sunt tempora totam veniam veritatis voluptates?</p>
+                <br><br>
+                <div class="firstIcons">
+                    <ul>
+                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-rss" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                <p class="h2 font text-uppercase">opening time</p>
+                <br><br>
+                <p class="day pull-left">Monday-Friday</p>  <p class="daytime pull-right">08.00 To 18.00</p><br>
+                <hr>
+                <p class="day pull-left">Saturday</p>  <p class="daytime pull-right">09.00 To 20.00</p><br>
+                <hr>
+                <p class="day pull-left">Sunday</p>  <p class="daytime pull-right">10.00 To 20.00</p><br>
+                <hr>
+
+                <p class="h4 font">Hot Line:(400)888 868 848</p>
+            </div>
+            <div class="hidden-xs col-sm-6 col-md-3 col-lg-3">
+                <p class="h2 font text-uppercase">latest tweet</p>
+                <br><br>
+                <div class="row secondIcons">
+                    <div class="col-sm-2 col-md-2 col-lg-2">
+                        <ul class="social-network social-circle">
+                            <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-twitter"></i></a></li>
+                        </ul>
+                        <br><br><br><br><br>
+                        <ul class="social-network social-circle">
+                            <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-twitter"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-10 col-md-10 col-lg-10">
+                        <p><span class="colorLink"><a href="#">@laurakalbag</a></span> As a result of your previous recommendation:)12 hours ago</p>
+                        <br><br>
+                        <p><span class="colorLink"><a href="#">@laurakalbag</a></span> As a result of your previous recommendation:)12 hours ago</p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                <p class="h2 font text-uppercase">Information</p>
+                <br><br>
+                <div class="row thirdIcons">
+                    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                        <div class="social-icons">
+                            <ul>
+                                <li class="icon-circle"><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i></a></li>
+                                <br><br>
+                                <li class="icon-circle"><a href="#"><i class="fa fa-mobile" aria-hidden="true"></i></a></li>
+                                <br><br><br>
+                                <li class="icon-circle"><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
+                        <p>868 Any Stress,Burala Casi,Picasa USA</p>
+                        <br>
+                        <p class="number1">(400) 888 888 888</p>
+                        <p class="number2">(400) 0888 888 888</p>
+                        <br><br>
+                        <p>Contact @RFL.com</p>
+                        <p>Sale @RFL.com</p>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!--More features starts here-->
+
+<section id="middleFooter">
+    <div class="container">
+        <div class="row hidden-xs">
+
+            <div class="col-sm-6 col-md-3 col-lg-3">
+                <p class="h3 font text-uppercase">category</p>
+                <br><br><br>
+                    <li><a href="#" class="text-capitalize">order history</a></li><hr>
+                    <li><a href="#" class="text-capitalize">returns</a></li><hr>
+                    <li><a href="#" class="text-capitalize">libero sed rhoncus</a></li><hr>
+                    <li><a href="#" class="text-capitalize">venenatis augue tellas</a></li><hr>
+                    <li><a href="#" class="text-capitalize">my vouchers</a></li><hr>
+            </div>
+            <div class="col-sm-6 col-md-3 col-lg-3">
+                <p class="h3 font text-uppercase">my account</p>
+                <br><br><br>
+                    <li><a href="#" class="text-capitalize">my account</a></li><hr>
+                    <li><a href="#" class="text-capitalize">customer service</a></li><hr>
+                    <li><a href="#" class="text-capitalize">privacy policy</a></li><hr>
+                    <li><a href="#" class="text-capitalize">site map</a></li><hr>
+                    <li><a href="#" class="text-capitalize">search terms</a></li><hr>
+            </div>
+            <div class="col-sm-6 col-md-3 col-lg-3">
+                <p class="h3 font text-uppercase">our services</p>
+                <br><br><br>
+
+                    <li><a href="#" class="text-capitalize">order history</a></li><hr>
+                    <li><a href="#" class="text-capitalize">returns</a></li><hr>
+                    <li><a href="#" class="text-capitalize">libero sed rhoncus</a></li><hr>
+                    <li><a href="#" class="text-capitalize">venenatis augue tellas</a></li><hr>
+                    <li><a href="#" class="text-capitalize">my vouchers</a></li><hr>
+            </div>
+            <div class="col-sm-6 col-md-3 col-lg-3">
+                <p class="h3 font text-uppercase">help & support</p>
+                <br><br><br>
+                    <li><a href="#" class="text-capitalize">knowledge</a></li><hr>
+                    <li><a href="#" class="text-capitalize">terms of use</a></li><hr>
+                    <li><a href="#" class="text-capitalize">contact support</a></li><hr>
+                    <li><a href="#" class="text-capitalize">marketplace blog</a></li><hr>
+                    <li><a href="#" class="text-capitalize">about RFL</a></li><hr>
+            </div>
+
+
+        </div>
+    </div>
+</section>
+
+<!--Footer starts here-->
+
+<section id="lowerFooter">
+    <div class="container">
+        <div class="row">
+
+            <p class="footerText pull-left">Copyright &copy; 2014 <a href="#"><span class="spfoot">RFL Shop.</span></a> -All rights Reserved.</p>
+
+            <div class="cashpay pull-right">
+                <img src="Pictures/payments/1.png" alt="">
+                <img src="Pictures/payments/2.png" alt="">
+                <img src="Pictures/payments/3.png" alt="">
+                <img src="Pictures/payments/4.png" alt="">
+                <img src="Pictures/payments/5.png" alt="">
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+<!--    R E L' S     C O D I N G     E N D S     H E R E     -->
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+
+<script src="js/common/modernizr.js"></script>
+<script src="js/common/fusionad.js"></script>
+
+<script src="js/demo/demo.js"></script>
+
+<script>
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-34160351-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+</script>
+
+
+</body>
+</html>

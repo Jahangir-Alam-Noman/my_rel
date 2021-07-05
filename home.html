@@ -1,0 +1,1112 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/imagehover.min.css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/demo.css">
+
+    <link rel="stylesheet" href="css/hw.scss">
+    <link rel="stylesheet" href="css/hw.css">
+
+
+
+</head>
+<body>
+
+
+<!--    R E L' S     C O D I N G     S T A R T S     H E R E     -->
+
+
+<!--Header starts here-->
+
+<section id="header">
+    <div class="container">
+        <div class="row">
+
+            <ul class="information pull-left">
+                <li><a href="#"><i class="fa fa-user" aria-hidden="true">&nbsp;&nbsp;&nbsp;My Account</i></a></li>
+                <li><a href="#"><i class="fa fa-heart" aria-hidden="true">&nbsp;&nbsp;&nbsp;Wishlist</i></a></li>
+                <li><a href="#"><i class="fa fa-shopping-cart" aria-hidden="true">&nbsp;&nbsp;&nbsp;My Cart</i></a></li>
+                <li><a href="#"><i class="fa fa-key" aria-hidden="true">&nbsp;&nbsp;&nbsp;Checkout</i></a></li>
+                <li class="bothInfo"><a href="#"><i class="fa fa-image" aria-hidden="true">&nbsp;&nbsp;&nbsp;Login</i></a></li>
+            </ul>
+
+            <ul class="choosing pull-right">
+                <li>
+                    <div class="dropdown">
+                        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                            currency : <span class="black">USD</span>
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                            <li><a href="#">Euro</a></li>
+                            <li><a href="#">Rupees</a></li>
+                            <li><a href="#">Taka</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Other Currency</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="dropdown">
+                        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                            language : <span class="black">English</span>
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                            <li><a href="#">French</a></li>
+                            <li><a href="#">Italian</a></li>
+                            <li><a href="#">Spanish</a></li>
+                            <li><a href="#">Bangla</a></li>
+                            <li><a href="#">Hindi</a></li>
+                            <li><a href="#">Urdu</a></li>
+                            <li><a href="#">Arabic</a></li>
+                            <li><a href="#">Chinese</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <br><br>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section id="middleHeader">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="setting">
+                <i class="fa fa-wrench"></i>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-offset-3 col-md-offset-3 col-sm-6 col-md-6">
+                <ul>
+                    <li class="infoForContact"><i class="fa fa-phone"></i>&nbsp;&nbsp;&nbsp;(400) 888 888 868</li>
+                    <li><i class="fa fa-envelope"></i>&nbsp;&nbsp;&nbsp;saler@RFL.com</li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                
+                <div class="col-sm-2 col-md-2">
+                    <img src="Pictures/logo.png" alt="">
+                </div>
+                <div class="col-sm-offset-1 col-md-offset-1 col-sm-6 col-md-6">
+
+                    <form class="form-inline">
+                        <div class="form-group">
+                            <label class="sr-only" for="exampleInputAmount">search</label>
+                            <div class="input-group">
+                                <div class="input-group-addon">
+                                    <div class="dropdown">
+                                        <div id="dLabel" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <a href="">Catagories</a>
+                                            <span class="caret"></span>
+                                        </div>
+                                        <ul class="dropdown-menu" aria-labelledby="dLabel">
+                                            <li><a href="#"><i class="fa fa-desktop">&nbsp;&nbsp;&nbsp;Computer</i></a></li>
+                                            <li><a href="#"><i class="fa fa-mobile">&nbsp;&nbsp;&nbsp;Smart Phone</i></a></li>
+                                            <li><a href="#"><i class="fa fa-camera">&nbsp;&nbsp;&nbsp;Camera</i></a></li>
+                                            <li><a href="#"><i class="fa fa-audio-description">&nbsp;&nbsp;&nbsp;TV & Audio</i></a></li>
+                                            <li><a href="#"><i class="fa fa-gamepad">&nbsp;&nbsp;&nbsp;Games</i></a></li>
+                                            <li><a href="#"><i class="fa fa-cab">&nbsp;&nbsp;&nbsp;Car Electronic</i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <input type="text" class="form-control" id="exampleInputAmount" placeholder="Seach here.....">
+                                <div class="input-group-addon"><i class="fa fa-search"></i></div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="col-sm-offset-1 col-md-offset-1 col-sm-2 col-md-2">
+                    <form class="form-inline">
+                        <div class="form-group">
+                            <div class="input-group">
+                                <input type="text" class="form-control" id="exampleInputAmount1">
+                                <div class="input-group-addon"><i class="fa fa-shopping-cart"></i></div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="lowerHeader">
+    <div class="container">
+        <div class="row">
+
+            <nav class="navbar">
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li><a href="Index.html">HOME</a></li>
+                        <li><a href="Desktop.html">DESKTOP</a></li>
+                        <li><a href="#">ELECTRONICS</a></li>
+                        <li><a href="#">TELEVISION</a></li>
+                        <li><a href="home.html" class="active">SMART PHONE</a></li>
+                        <li><a href="Contact.html">CONTACT</a></li>
+                        <li><a href="Pages.html">PAGES</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="ntags">NEW</div>
+            <div class="htags">HOT</div>
+
+        </div>
+    </div>
+</section>
+
+<!--Banner starts here-->
+
+<section id="banner2">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-sm-3 col-md-3">
+                <div class="row newCat">
+                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingOne" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                <h4 class="panel-title text-uppercase">
+                                    <i class="fa fa-align-justify"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;catagories
+                                </h4>
+                            </div>
+                            <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                                <div class="panel-body text-uppercase">
+                                    <ul>
+                                        <li><a href="#"><i class="fa fa-desktop"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; computer<i class="fa fa-arrow-circle-right pull-right"></i></a></li>
+                                        <li><a href="#">&nbsp;&nbsp;<i class="fa fa-mobile"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; smart phone<i class="fa fa-arrow-circle-right pull-right"></i></a></li>
+                                        <li><a href="#">&nbsp;<i class="fa fa-apple"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; apple store<i class="fa fa-arrow-circle-right pull-right"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-camera"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; camera<i class="fa fa-arrow-circle-right pull-right"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-headphones"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; tv & audio<i class="fa fa-arrow-circle-right pull-right"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-gamepad"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; game & video<i class="fa fa-arrow-circle-right pull-right"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-location-arrow"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;car electronic<i class="fa fa-arrow-circle-right pull-right"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-history"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; old products<i class="fa fa-arrow-circle-right pull-right"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-microphone"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; accessories<i class="fa fa-arrow-circle-right pull-right"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br><br><br>
+                <div class="row">
+                    <p class="font h2 text-uppercase">Shop By</p>
+                    <hr>
+                </div>
+
+                <div class="row">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <p class="h3 font">Catagories</p>
+                        </div>
+                        <div class="panel-body">
+                            <ul>
+                                <li><a href=""><p class="pull-left">Camera</p><i class="pull-right fa fa-plus-square-o"></i></a></li>
+                                <br><br>
+                                <li><a href=""><p class="pull-left">Desktop</p><i class="pull-right fa fa-plus-square-o"></i></a></li>
+                                <br><br>
+                                <li><a href=""><p class="pull-left">Pants</p><i class="pull-right fa fa-plus-square-o"></i></a></li>
+                                <br><br>
+                                <li><a href=""><p class="pull-left">Bags</p><i class="pull-right fa fa-plus-square-o"></i></a></li>
+                                <br><br>
+                                <li><a href=""><p class="pull-left">Hats</p><i class="pull-right fa fa-plus-square-o"></i></a></li>
+                                <br><br>
+                                <li><a href=""><p class="pull-left">Accessories</p><i class="pull-right fa fa-plus-square-o"></i></a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <br><br><br>
+                <div class="row">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <p class="h3 font">Manufactures</p>
+                        </div>
+                        <div class="panel-body">
+                            <ul>
+                                <li><a href=""><p class="pull-left">Forever 18</p></a></li>
+                                <br><br>
+                                <li><a href=""><p class="pull-left">Nike</p></a></li>
+                                <br><br>
+                                <li><a href=""><p class="pull-left">Dolce & Gabbana</p></a></li>
+                                <br><br>
+                                <li><a href=""><p class="pull-left">Alluare</p></a></li>
+                                <br><br>
+                                <li><a href=""><p class="pull-left">Chanel</p></a></li>
+                                <br><br>
+                                <li><a href=""><p class="pull-left">Other Brand</p></a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <br><br><br>
+                <div class="row">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <p class="h3 font">Colors</p>
+                        </div>
+                        <div class="panel-body">
+                            <ul>
+                                <li><a href=""><p class="pull-left">Red</p></a></li>
+                                <br><br>
+                                <li><a href=""><p class="pull-left">Blue</p></a></li>
+                                <br><br>
+                                <li><a href=""><p class="pull-left">Yellow</p></a></li>
+                                <br><br>
+                                <li><a href=""><p class="pull-left">Pink</p></a></li>
+                                <br><br>
+                                <li><a href=""><p class="pull-left">Brown</p></a></li>
+                                <br><br>
+                                <li><a href=""><p class="pull-left">Teal</p></a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="color-changer">
+                    <div class="red"></div>
+                    <div class="purple"></div>
+                    <div class="white"></div>
+                    <div class="yellow"></div>
+                    <div class="blue"></div>
+                    <div class="deeppink"></div>
+                </div>
+                <br><br><br>
+                <div class="row">
+                    <div class="panel-group" id="accordion4" role="tablist" aria-multiselectable="true">
+                        <div class="panel">
+                            <div class="panel-heading" role="tab" id="headingOne4" data-toggle="collapse" data-parent="#accordion" href="#collapseOne4" aria-expanded="true" aria-controls="collapseOne4">
+                                <h4 class="panel-title">COMPARE PRODUCTS</h4>
+                            </div>
+                            <div id="collapseOne4" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne4">
+                                <div class="panel-body">
+                                    <p class="h5">You have no <a href="Pages.html">item(s)</a> to compare</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <br><br><br>
+                <div class="row">
+                    <div class="panel-group" id="accordion3" role="tablist" aria-multiselectable="true">
+                        <div class="panel">
+                            <div class="panel-heading" role="tab" id="headingOne3" data-toggle="collapse" data-parent="#accordion" href="#collapseOne3" aria-expanded="true" aria-controls="collapseOne3">
+                                <h4 class="panel-title">PRODUCT TAGS</h4>
+                            </div>
+                            <div id="collapseOne3" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne3">
+                                <div class="panel-body">
+                                    <a href="#"><div class="sectionTag">Phone</div></a>
+                                    <a href="#"><div class="sectionTag">Vest</div></a>
+                                    <a href="#"><div class="sectionTag">Smartphone</div></a>
+                                    <a href="#"><div class="sectionTag">Furniture</div></a>
+                                    <a href="#"><div class="sectionTag">T-Shirt</div></a>
+                                    <a href="#"><div class="sectionTag">Sweatpants</div></a>
+                                    <a href="#"><div class="sectionTag">Sneaker</div></a>
+                                    <a href="#"><div class="sectionTag">Toys</div></a>
+                                    <a href="#"><div class="sectionTag">Rose</div></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <br><br><br>
+                <div class="row saving">
+                    <div class="row">
+                        <div id="carousel-example-generic3" class="carousel slide" data-ride="carousel">
+                            <!-- Indicators -->
+                            <ol class="carousel-indicators">
+                                <li data-target="#carousel-example-generic3" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel-example-generic3" data-slide-to="1"></li>
+                                <li data-target="#carousel-example-generic3" data-slide-to="2"></li>
+                            </ol>
+
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner" role="listbox">
+                                <div class="item active">
+                                    <p class="head">SAVE</p>
+                                    <p class="body">50%</p><br><br>
+                                    <p class="foot">ON SELECTED ITEMS</p>
+                                </div>
+                                <div class="item">
+                                    <p class="head">SAVE</p>
+                                    <p class="body">50%</p><br><br>
+                                    <p class="foot">ON SELECTED ITEMS</p>
+                                </div>
+                                <div class="item">
+                                    <p class="head">SAVE</p>
+                                    <p class="body">50%</p><br><br>
+                                    <p class="foot">ON SELECTED ITEMS</p>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+            <div class="col-sm-9 col-md-9">
+                <div class="banner2">
+                    <p class="font">SALE</p>
+                    <p>UP TO 50% OFF</p>
+                </div>
+                <br>
+
+                <div id="container">
+                    <div class="problem">
+                        <div class="view-controls-list" id="viewcontrols">
+                            <a class="gridview"><i class="fa fa-th fa-2x"></i></a>
+                            <a class="listview active"><i class="fa fa-list fa-2x"></i></a>
+                        </div>
+                        <ul class="list">
+                            <li>
+                                <div class="stag1 text-center">NEW</div>
+
+                                <img src="Pictures/fashion-products/1.jpg" height="300px" width="250px"/>
+
+                                <section class="list-left">
+
+                                    <span class="title">PRODUCT NAME</span>
+                                    <p>Product description goes here. Aliquam tincidunt diam varius ultricies auctor. Vivamus faucibus risus tempus, adipiscing justo</p>
+                                    <div class="icon-group-btn">
+                                        <a title="Add to Cart" href="javascript:void(0);" class="btn-cart" onclick="">
+                                            <span class="icon-cart"><i class="fa fa-shopping-cart"></i></span>
+                                            <span class="icon-cart-text">
+					Add To Cart
+				</span>
+                                        </a>
+                                        <a title="Add to wishlist" href="#" class="btn-wishlist">
+                                            <span class="icon-wishlist"><i class="fa fa-heart"></i></span>
+                                            <span class="icon-wishlist-text">
+					Add To Wishlist
+				</span>
+                                        </a>
+                                        <a title="Add to Compare" href="#" class="btn-compare">
+                                            <span class="icon-compare"><i class="fa fa-retweet"></i></span>
+                                            <span class="compare-text">
+					Add To Compare
+				</span>
+                                        </a>
+                                    </div>
+                                </section>
+                                <section class="list-right">
+                                    <span class="price">$50</span>
+                                    <span class="detail"><a class="button">Details</a></span>
+                                </section>
+                            </li>
+                            <li>
+                                <div class="stag2 text-center">SALE</div>
+
+                                <img src="Pictures/fashion-products/2.jpg" height="300px" width="250px"/>
+
+                                <section class="list-left">
+
+                                    <span class="title">PRODUCT NAME</span>
+                                    <p>Product description goes here. Aliquam tincidunt diam varius ultricies auctor. Vivamus faucibus risus tempus, adipiscing justo</p>
+                                    <div class="icon-group-btn">
+                                        <a title="Add to Cart" href="javascript:void(0);" class="btn-cart" onclick="">
+                                            <span class="icon-cart"><i class="fa fa-shopping-cart"></i></span>
+                                            <span class="icon-cart-text">
+					Add To Cart
+				</span>
+                                        </a>
+                                        <a title="Add to wishlist" href="#" class="btn-wishlist">
+                                            <span class="icon-wishlist"><i class="fa fa-heart"></i></span>
+                                            <span class="icon-wishlist-text">
+					Add To Wishlist
+				</span>
+                                        </a>
+                                        <a title="Add to Compare" href="#" class="btn-compare">
+                                            <span class="icon-compare"><i class="fa fa-retweet"></i></span>
+                                            <span class="compare-text">
+					Add To Compare
+				</span>
+                                        </a>
+                                    </div>
+                                </section>
+                                <section class="list-right">
+                                    <span class="price">$50</span>
+                                    <span class="detail"><a class="button">Details</a></span>
+                                </section>
+                            </li>
+                            <li>
+                                <div class="stag3 text-center">HOT</div>
+
+                                <img src="Pictures/fashion-products/3.jpg" height="300px" width="250px"/>
+
+                                <section class="list-left">
+
+                                    <span class="title">PRODUCT NAME</span>
+                                    <p>Product description goes here. Aliquam tincidunt diam varius ultricies auctor. Vivamus faucibus risus tempus, adipiscing justo</p>
+                                    <div class="icon-group-btn">
+                                        <a title="Add to Cart" href="javascript:void(0);" class="btn-cart" onclick="">
+                                            <span class="icon-cart"><i class="fa fa-shopping-cart"></i></span>
+                                            <span class="icon-cart-text">
+					Add To Cart
+				</span>
+                                        </a>
+                                        <a title="Add to wishlist" href="#" class="btn-wishlist">
+                                            <span class="icon-wishlist"><i class="fa fa-heart"></i></span>
+                                            <span class="icon-wishlist-text">
+					Add To Wishlist
+				</span>
+                                        </a>
+                                        <a title="Add to Compare" href="#" class="btn-compare">
+                                            <span class="icon-compare"><i class="fa fa-retweet"></i></span>
+                                            <span class="compare-text">
+					Add To Compare
+				</span>
+                                        </a>
+                                    </div>
+                                </section>
+                                <section class="list-right">
+                                    <span class="price">$50</span>
+                                    <span class="detail"><a class="button">Details</a></span>
+                                </section>
+                            </li>
+
+                            <li>
+                                <div class="stag1 text-center">NEW</div>
+
+                                <img src="Pictures/fashion-products/4.jpg" height="300px" width="250px"/>
+
+                                <section class="list-left">
+
+                                    <span class="title">PRODUCT NAME</span>
+                                    <p>Product description goes here. Aliquam tincidunt diam varius ultricies auctor. Vivamus faucibus risus tempus, adipiscing justo</p>
+                                    <div class="icon-group-btn">
+                                        <a title="Add to Cart" href="javascript:void(0);" class="btn-cart" onclick="">
+                                            <span class="icon-cart"><i class="fa fa-shopping-cart"></i></span>
+                                            <span class="icon-cart-text">
+					Add To Cart
+				</span>
+                                        </a>
+                                        <a title="Add to wishlist" href="#" class="btn-wishlist">
+                                            <span class="icon-wishlist"><i class="fa fa-heart"></i></span>
+                                            <span class="icon-wishlist-text">
+					Add To Wishlist
+				</span>
+                                        </a>
+                                        <a title="Add to Compare" href="#" class="btn-compare">
+                                            <span class="icon-compare"><i class="fa fa-retweet"></i></span>
+                                            <span class="compare-text">
+					Add To Compare
+				</span>
+                                        </a>
+                                    </div>
+                                </section>
+                                <section class="list-right">
+                                    <span class="price">$50</span>
+                                    <span class="detail"><a class="button">Details</a></span>
+                                </section>
+                            </li>
+                            <li>
+                                <div class="stag2 text-center">SALE</div>
+
+                                <img src="Pictures/fashion-products/5.jpg" height="300px" width="250px"/>
+
+                                <section class="list-left">
+
+                                    <span class="title">PRODUCT NAME</span>
+                                    <p>Product description goes here. Aliquam tincidunt diam varius ultricies auctor. Vivamus faucibus risus tempus, adipiscing justo</p>
+                                    <div class="icon-group-btn">
+                                        <a title="Add to Cart" href="javascript:void(0);" class="btn-cart" onclick="">
+                                            <span class="icon-cart"><i class="fa fa-shopping-cart"></i></span>
+                                            <span class="icon-cart-text">
+					Add To Cart
+				</span>
+                                        </a>
+                                        <a title="Add to wishlist" href="#" class="btn-wishlist">
+                                            <span class="icon-wishlist"><i class="fa fa-heart"></i></span>
+                                            <span class="icon-wishlist-text">
+					Add To Wishlist
+				</span>
+                                        </a>
+                                        <a title="Add to Compare" href="#" class="btn-compare">
+                                            <span class="icon-compare"><i class="fa fa-retweet"></i></span>
+                                            <span class="compare-text">
+					Add To Compare
+				</span>
+                                        </a>
+                                    </div>
+                                </section>
+                                <section class="list-right">
+                                    <span class="price">$50</span>
+                                    <span class="detail"><a class="button">Details</a></span>
+                                </section>
+                            </li>
+                            <li>
+                                <div class="stag3 text-center">HOT</div>
+
+                                <img src="Pictures/fashion-products/6.jpg" height="300px" width="250px"/>
+
+                                <section class="list-left">
+
+                                    <span class="title">PRODUCT NAME</span>
+                                    <p>Product description goes here. Aliquam tincidunt diam varius ultricies auctor. Vivamus faucibus risus tempus, adipiscing justo</p>
+                                    <div class="icon-group-btn">
+                                        <a title="Add to Cart" href="javascript:void(0);" class="btn-cart" onclick="">
+                                            <span class="icon-cart"><i class="fa fa-shopping-cart"></i></span>
+                                            <span class="icon-cart-text">
+					Add To Cart
+				</span>
+                                        </a>
+                                        <a title="Add to wishlist" href="#" class="btn-wishlist">
+                                            <span class="icon-wishlist"><i class="fa fa-heart"></i></span>
+                                            <span class="icon-wishlist-text">
+					Add To Wishlist
+				</span>
+                                        </a>
+                                        <a title="Add to Compare" href="#" class="btn-compare">
+                                            <span class="icon-compare"><i class="fa fa-retweet"></i></span>
+                                            <span class="compare-text">
+					Add To Compare
+				</span>
+                                        </a>
+                                    </div>
+                                </section>
+                                <section class="list-right">
+                                    <span class="price">$50</span>
+                                    <span class="detail"><a class="button">Details</a></span>
+                                </section>
+                            </li>
+
+                            <li>
+                                <div class="stag1 text-center">NEW</div>
+
+                                <img src="Pictures/fashion-products/7.jpg" height="300px" width="250px"/>
+
+                                <section class="list-left">
+
+                                    <span class="title">PRODUCT NAME</span>
+                                    <p>Product description goes here. Aliquam tincidunt diam varius ultricies auctor. Vivamus faucibus risus tempus, adipiscing justo</p>
+                                    <div class="icon-group-btn">
+                                        <a title="Add to Cart" href="javascript:void(0);" class="btn-cart" onclick="">
+                                            <span class="icon-cart"><i class="fa fa-shopping-cart"></i></span>
+                                            <span class="icon-cart-text">
+					Add To Cart
+				</span>
+                                        </a>
+                                        <a title="Add to wishlist" href="#" class="btn-wishlist">
+                                            <span class="icon-wishlist"><i class="fa fa-heart"></i></span>
+                                            <span class="icon-wishlist-text">
+					Add To Wishlist
+				</span>
+                                        </a>
+                                        <a title="Add to Compare" href="#" class="btn-compare">
+                                            <span class="icon-compare"><i class="fa fa-retweet"></i></span>
+                                            <span class="compare-text">
+					Add To Compare
+				</span>
+                                        </a>
+                                    </div>
+                                </section>
+                                <section class="list-right">
+                                    <span class="price">$50</span>
+                                    <span class="detail"><a class="button">Details</a></span>
+                                </section>
+                            </li>
+                            <li>
+                                <div class="stag2 text-center">SALE</div>
+
+                                <img src="Pictures/fashion-products/8.jpg" height="300px" width="250px"/>
+
+                                <section class="list-left">
+
+                                    <span class="title">PRODUCT NAME</span>
+                                    <p>Product description goes here. Aliquam tincidunt diam varius ultricies auctor. Vivamus faucibus risus tempus, adipiscing justo</p>
+                                    <div class="icon-group-btn">
+                                        <a title="Add to Cart" href="javascript:void(0);" class="btn-cart" onclick="">
+                                            <span class="icon-cart"><i class="fa fa-shopping-cart"></i></span>
+                                            <span class="icon-cart-text">
+					Add To Cart
+				</span>
+                                        </a>
+                                        <a title="Add to wishlist" href="#" class="btn-wishlist">
+                                            <span class="icon-wishlist"><i class="fa fa-heart"></i></span>
+                                            <span class="icon-wishlist-text">
+					Add To Wishlist
+				</span>
+                                        </a>
+                                        <a title="Add to Compare" href="#" class="btn-compare">
+                                            <span class="icon-compare"><i class="fa fa-retweet"></i></span>
+                                            <span class="compare-text">
+					Add To Compare
+				</span>
+                                        </a>
+                                    </div>
+                                </section>
+                                <section class="list-right">
+                                    <span class="price">$50</span>
+                                    <span class="detail"><a class="button">Details</a></span>
+                                </section>
+                            </li>
+                            <li>
+                                <div class="stag3 text-center">HOT</div>
+
+                                <img src="Pictures/fashion-products/2.jpg" height="300px" width="250px"/>
+
+                                <section class="list-left">
+
+                                    <span class="title">PRODUCT NAME</span>
+                                    <p>Product description goes here. Aliquam tincidunt diam varius ultricies auctor. Vivamus faucibus risus tempus, adipiscing justo</p>
+                                    <div class="icon-group-btn">
+                                        <a title="Add to Cart" href="javascript:void(0);" class="btn-cart" onclick="">
+                                            <span class="icon-cart"><i class="fa fa-shopping-cart"></i></span>
+                                            <span class="icon-cart-text">
+					Add To Cart
+				</span>
+                                        </a>
+                                        <a title="Add to wishlist" href="#" class="btn-wishlist">
+                                            <span class="icon-wishlist"><i class="fa fa-heart"></i></span>
+                                            <span class="icon-wishlist-text">
+					Add To Wishlist
+				</span>
+                                        </a>
+                                        <a title="Add to Compare" href="#" class="btn-compare">
+                                            <span class="icon-compare"><i class="fa fa-retweet"></i></span>
+                                            <span class="compare-text">
+					Add To Compare
+				</span>
+                                        </a>
+                                    </div>
+                                </section>
+                                <section class="list-right">
+                                    <span class="price">$50</span>
+                                    <span class="detail"><a class="button">Details</a></span>
+                                </section>
+                            </li>
+
+                            <li>
+                                <div class="stag1 text-center">NEW</div>
+
+                                <img src="Pictures/fashion-products/1.jpg" height="300px" width="250px"/>
+
+                                <section class="list-left">
+
+                                    <span class="title">PRODUCT NAME</span>
+                                    <p>Product description goes here. Aliquam tincidunt diam varius ultricies auctor. Vivamus faucibus risus tempus, adipiscing justo</p>
+                                    <div class="icon-group-btn">
+                                        <a title="Add to Cart" href="javascript:void(0);" class="btn-cart" onclick="">
+                                            <span class="icon-cart"><i class="fa fa-shopping-cart"></i></span>
+                                            <span class="icon-cart-text">
+					Add To Cart
+				</span>
+                                        </a>
+                                        <a title="Add to wishlist" href="#" class="btn-wishlist">
+                                            <span class="icon-wishlist"><i class="fa fa-heart"></i></span>
+                                            <span class="icon-wishlist-text">
+					Add To Wishlist
+				</span>
+                                        </a>
+                                        <a title="Add to Compare" href="#" class="btn-compare">
+                                            <span class="icon-compare"><i class="fa fa-retweet"></i></span>
+                                            <span class="compare-text">
+					Add To Compare
+				</span>
+                                        </a>
+                                    </div>
+                                </section>
+                                <section class="list-right">
+                                    <span class="price">$50</span>
+                                    <span class="detail"><a class="button">Details</a></span>
+                                </section>
+                            </li>
+                            <li>
+                                <div class="stag2 text-center">SALE</div>
+
+                                <img src="Pictures/fashion-products/6.jpg" height="300px" width="250px"/>
+
+                                <section class="list-left">
+
+                                    <span class="title">PRODUCT NAME</span>
+                                    <p>Product description goes here. Aliquam tincidunt diam varius ultricies auctor. Vivamus faucibus risus tempus, adipiscing justo</p>
+                                    <div class="icon-group-btn">
+                                        <a title="Add to Cart" href="javascript:void(0);" class="btn-cart" onclick="">
+                                            <span class="icon-cart"><i class="fa fa-shopping-cart"></i></span>
+                                            <span class="icon-cart-text">
+					Add To Cart
+				</span>
+                                        </a>
+                                        <a title="Add to wishlist" href="#" class="btn-wishlist">
+                                            <span class="icon-wishlist"><i class="fa fa-heart"></i></span>
+                                            <span class="icon-wishlist-text">
+					Add To Wishlist
+				</span>
+                                        </a>
+                                        <a title="Add to Compare" href="#" class="btn-compare">
+                                            <span class="icon-compare"><i class="fa fa-retweet"></i></span>
+                                            <span class="compare-text">
+					Add To Compare
+				</span>
+                                        </a>
+                                    </div>
+                                </section>
+                                <section class="list-right">
+                                    <span class="price">$50</span>
+                                    <span class="detail"><a class="button">Details</a></span>
+                                </section>
+                            </li>
+                            <li>
+                                <div class="stag3 text-center">HOT</div>
+
+                                <img src="Pictures/fashion-products/3.jpg" height="300px" width="250px"/>
+
+                                <section class="list-left">
+
+                                    <span class="title">PRODUCT NAME</span>
+                                    <p>Product description goes here. Aliquam tincidunt diam varius ultricies auctor. Vivamus faucibus risus tempus, adipiscing justo</p>
+                                    <div class="icon-group-btn">
+                                        <a title="Add to Cart" href="javascript:void(0);" class="btn-cart" onclick="">
+                                            <span class="icon-cart"><i class="fa fa-shopping-cart"></i></span>
+                                            <span class="icon-cart-text">
+					Add To Cart
+				</span>
+                                        </a>
+                                        <a title="Add to wishlist" href="#" class="btn-wishlist">
+                                            <span class="icon-wishlist"><i class="fa fa-heart"></i></span>
+                                            <span class="icon-wishlist-text">
+					Add To Wishlist
+				</span>
+                                        </a>
+                                        <a title="Add to Compare" href="#" class="btn-compare">
+                                            <span class="icon-compare"><i class="fa fa-retweet"></i></span>
+                                            <span class="compare-text">
+					Add To Compare
+				</span>
+                                        </a>
+                                    </div>
+                                </section>
+                                <section class="list-right">
+                                    <span class="price">$50</span>
+                                    <span class="detail"><a class="button">Details</a></span>
+                                </section>
+                            </li>
+
+
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+</section>
+
+<!--Blog starts here-->
+
+<section id="brand">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8 col-md-8">
+                <h4>FEATURED PRODUCTS</h4>
+            </div>
+            <div class="col-sm-4 col-md-4">
+                <!-- Controls -->
+                <div class="controls pull-right hidden-xs">
+                    <a class="left fa fa-chevron-left btn btn-default" href="#carousel-example9" data-slide="prev"></a>
+                    <a class="right fa fa-chevron-right btn btn-default" href="#carousel-example9" data-slide="next"></a>
+                </div>
+            </div>
+            <br><br>
+            <hr>
+        </div>
+        <br><br>
+        <div class="row">
+            <div id="carousel-example9" class="carousel phone slide hidden-xs" data-ride="carousel">
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                            <img src="Pictures/brands/brand1.png" alt="">
+                        </div>
+                        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                            <img src="Pictures/brands/brand2.png" alt="">
+                        </div>
+                        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                            <img src="Pictures/brands/brand3.png" alt="">
+                        </div>
+                        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                            <img src="Pictures/brands/brand4.png" alt="">
+                        </div>
+                        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                            <img src="Pictures/brands/brand5.png" alt="">
+                        </div>
+                        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                            <img src="Pictures/brands/brand6.png" alt="">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                            <img src="Pictures/brands/b1.png" alt="">
+                        </div>
+                        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                            <img src="Pictures/brands/b2.png" alt="">
+                        </div>
+                        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                            <img src="Pictures/brands/b3.png" alt="">
+                        </div>
+                        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                            <img src="Pictures/brands/b4.png" alt="">
+                        </div>
+                        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                            <img src="Pictures/brands/b5.png" alt="">
+                        </div>
+                        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                            <img src="Pictures/brands/b6.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br>
+    </div>
+</section>
+
+<!--Pages starts here-->
+
+<section id="nothing">
+    <hr>
+</section>
+
+<!--Features starts here-->
+
+<section id="upperFooter">
+    <div class="container">
+        <div class="row">
+            
+            <div class="hidden-xs col-sm-6 col-md-3 col-lg-3">
+                <img src="Pictures/logo.png" alt="">
+                <br>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, commodi ea excepturi exercitationem illo impedit incidunt magnam maxime nemo nesciunt optio quam quis repudiandae sunt tempora totam veniam veritatis voluptates?</p>
+                <br><br>
+                <div class="firstIcons">
+                    <ul>
+                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-rss" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                <p class="h2 font text-uppercase">opening time</p>
+                <br><br>
+                <p class="day pull-left">Monday-Friday</p>  <p class="daytime pull-right">08.00 To 18.00</p><br>
+                <hr>
+                <p class="day pull-left">Saturday</p>  <p class="daytime pull-right">09.00 To 20.00</p><br>
+                <hr>
+                <p class="day pull-left">Sunday</p>  <p class="daytime pull-right">10.00 To 20.00</p><br>
+                <hr>
+
+                <p class="h4 font">Hot Line:(400)888 868 848</p>
+            </div>
+            <div class="hidden-xs col-sm-6 col-md-3 col-lg-3">
+                <p class="h2 font text-uppercase">latest tweet</p>
+                <br><br>
+                <div class="row secondIcons">
+                    <div class="col-sm-2 col-md-2 col-lg-2">
+                        <ul class="social-network social-circle">
+                            <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-twitter"></i></a></li>
+                        </ul>
+                        <br><br><br><br><br>
+                        <ul class="social-network social-circle">
+                            <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-twitter"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-10 col-md-10 col-lg-10">
+                        <p><span class="colorLink"><a href="#">@laurakalbag</a></span> As a result of your previous recommendation:)12 hours ago</p>
+                        <br><br>
+                        <p><span class="colorLink"><a href="#">@laurakalbag</a></span> As a result of your previous recommendation:)12 hours ago</p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                <p class="h2 font text-uppercase">Information</p>
+                <br><br>
+                <div class="row thirdIcons">
+                    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                        <div class="social-icons">
+                            <ul>
+                                <li class="icon-circle"><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i></a></li>
+                                <br><br>
+                                <li class="icon-circle"><a href="#"><i class="fa fa-mobile" aria-hidden="true"></i></a></li>
+                                <br><br><br>
+                                <li class="icon-circle"><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
+                        <p>868 Any Stress,Burala Casi,Picasa USA</p>
+                        <br>
+                        <p class="number1">(400) 888 888 888</p>
+                        <p class="number2">(400) 0888 888 888</p>
+                        <br><br>
+                        <p>Contact @RFL.com</p>
+                        <p>Sale @RFL.com</p>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!--More features starts here-->
+
+<section id="middleFooter">
+    <div class="container">
+        <div class="row hidden-xs">
+
+            <div class="col-sm-6 col-md-3 col-lg-3">
+                <p class="h3 font text-uppercase">category</p>
+                <br><br><br>
+                    <li><a href="#" class="text-capitalize">order history</a></li><hr>
+                    <li><a href="#" class="text-capitalize">returns</a></li><hr>
+                    <li><a href="#" class="text-capitalize">libero sed rhoncus</a></li><hr>
+                    <li><a href="#" class="text-capitalize">venenatis augue tellas</a></li><hr>
+                    <li><a href="#" class="text-capitalize">my vouchers</a></li><hr>
+            </div>
+            <div class="col-sm-6 col-md-3 col-lg-3">
+                <p class="h3 font text-uppercase">my account</p>
+                <br><br><br>
+                    <li><a href="#" class="text-capitalize">my account</a></li><hr>
+                    <li><a href="#" class="text-capitalize">customer service</a></li><hr>
+                    <li><a href="#" class="text-capitalize">privacy policy</a></li><hr>
+                    <li><a href="#" class="text-capitalize">site map</a></li><hr>
+                    <li><a href="#" class="text-capitalize">search terms</a></li><hr>
+            </div>
+            <div class="col-sm-6 col-md-3 col-lg-3">
+                <p class="h3 font text-uppercase">our services</p>
+                <br><br><br>
+
+                    <li><a href="#" class="text-capitalize">order history</a></li><hr>
+                    <li><a href="#" class="text-capitalize">returns</a></li><hr>
+                    <li><a href="#" class="text-capitalize">libero sed rhoncus</a></li><hr>
+                    <li><a href="#" class="text-capitalize">venenatis augue tellas</a></li><hr>
+                    <li><a href="#" class="text-capitalize">my vouchers</a></li><hr>
+            </div>
+            <div class="col-sm-6 col-md-3 col-lg-3">
+                <p class="h3 font text-uppercase">help & support</p>
+                <br><br><br>
+                    <li><a href="#" class="text-capitalize">knowledge</a></li><hr>
+                    <li><a href="#" class="text-capitalize">terms of use</a></li><hr>
+                    <li><a href="#" class="text-capitalize">contact support</a></li><hr>
+                    <li><a href="#" class="text-capitalize">marketplace blog</a></li><hr>
+                    <li><a href="#" class="text-capitalize">about RFL</a></li><hr>
+            </div>
+
+
+        </div>
+    </div>
+</section>
+
+<!--Footer starts here-->
+
+<section id="lowerFooter">
+    <div class="container">
+        <div class="row">
+
+            <p class="footerText pull-left">Copyright &copy; 2014 <a href="#"><span class="spfoot">RFL Shop.</span></a> -All rights Reserved.</p>
+
+            <div class="cashpay pull-right">
+                <img src="Pictures/payments/1.png" alt="">
+                <img src="Pictures/payments/2.png" alt="">
+                <img src="Pictures/payments/3.png" alt="">
+                <img src="Pictures/payments/4.png" alt="">
+                <img src="Pictures/payments/5.png" alt="">
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+<!--    R E L' S     C O D I N G     E N D S     H E R E     -->
+
+
+
+
+
+
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/jquery-1.8.2.min.js" type="text/javascript"></script>
+
+<script src="js/common/modernizr.js"></script>
+<script src="js/common/fusionad.js"></script>
+
+<script src="js/demo/demo.js"></script>
+
+<script src="js/custom.js"></script>
+
+<script>
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-34160351-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+</script>
+
+
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        var elem=$('#container ul');
+        $('#viewcontrols a').on('click',function(e) {
+            if ($(this).hasClass('gridview')) {
+                elem.fadeOut(1000, function () {
+                    $('#container ul').removeClass('list').addClass('grid');
+                    $('#viewcontrols').removeClass('view-controls-list').addClass('view-controls-grid');
+                    $('#viewcontrols .gridview').addClass('active');
+                    $('#viewcontrols .listview').removeClass('active');
+                    elem.fadeIn(1000);
+                });
+            }
+            else if($(this).hasClass('listview')) {
+                elem.fadeOut(1000, function () {
+                    $('#container ul').removeClass('grid').addClass('list');
+                    $('#viewcontrols').removeClass('view-controls-grid').addClass('view-controls-list');
+                    $('#viewcontrols .gridview').removeClass('active');
+                    $('#viewcontrols .listview').addClass('active');
+                    elem.fadeIn(1000);
+                });
+            }
+        });
+    });
+</script>
+
+
+
+</body>
+</html>
